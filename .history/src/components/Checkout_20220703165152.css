@@ -1,0 +1,7 @@
+.checkout {
+  display: flex;
+}
+.checkout__ad {
+width: 100%;
+max-height: 200px;
+}
