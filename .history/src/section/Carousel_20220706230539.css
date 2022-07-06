@@ -1,0 +1,16 @@
+.container {
+max-width: 1500px;
+  padding: 40px;
+  max-height: 900px;
+}
+
+.slick-slide img {
+
+    width: 100%;
+
+    z-index: -100;
+    margin-top: 20px !important;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.5));
+  }
+

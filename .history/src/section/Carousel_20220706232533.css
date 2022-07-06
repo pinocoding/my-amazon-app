@@ -1,0 +1,27 @@
+.container {
+max-width: 1500px;
+  padding: 40px;
+
+}
+
+.slick-slide img {
+
+    width: 100%;
+
+    z-index: -100;
+    margin-top:25px !important;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.5));
+  }
+
+
+  /* .slick-prev .slick-next{
+    width: 105px !important;
+
+  } */
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px !important;
+    opacity: 1 !important;
+    z-index: 1000;
+  }
+
