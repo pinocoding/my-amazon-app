@@ -1,0 +1,10 @@
+.container {
+  margin-top: 50px;
+  width: 100vw;
+  padding: 40px;
+  border: 1px solid;
+}
+
+.slick-slide img {
+  margin: auto;
+}
