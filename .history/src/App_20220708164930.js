@@ -9,22 +9,19 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* <Header /> */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Home />
+            </>
+          }
+        />
+        {/* ----Header----- */}
         <Routes>
-          {/* <Header /> */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Header />
-                <Home />
-              </>
-            }
-          />
-          {/*  */}
-          {/* ------Login----- */}
           <Route path="/login" element={<Login />} />
-          {/*  */}
-          {/* ------Checkout---- */}
           <Route
             path="/checkout"
             element={
@@ -34,7 +31,6 @@ function App() {
               </>
             }
           />
-          {/*  */}
         </Routes>
       </div>
     </Router>

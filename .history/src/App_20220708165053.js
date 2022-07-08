@@ -9,8 +9,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* <Header /> */}
+
         <Routes>
-          {/* <Header /> */}
           <Route
             path="/"
             element={
@@ -20,11 +21,8 @@ function App() {
               </>
             }
           />
-          {/*  */}
-          {/* ------Login----- */}
+          {/* ----Header----- */}
           <Route path="/login" element={<Login />} />
-          {/*  */}
-          {/* ------Checkout---- */}
           <Route
             path="/checkout"
             element={
@@ -34,7 +32,6 @@ function App() {
               </>
             }
           />
-          {/*  */}
         </Routes>
       </div>
     </Router>
