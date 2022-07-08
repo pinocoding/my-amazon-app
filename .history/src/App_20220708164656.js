@@ -9,8 +9,19 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* <Header /> */}
         <Routes>
-          {/* <Header /> */}
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/checkout"
+            element={
+              <>
+                {/* <Header /> */}
+                <Checkout />
+              </>
+            }
+          />
+
           <Route
             path="/"
             element={
@@ -20,21 +31,6 @@ function App() {
               </>
             }
           />
-          {/*  */}
-          {/* ------Login----- */}
-          <Route path="/login" element={<Login />} />
-          {/*  */}
-          {/* ------Checkout---- */}
-          <Route
-            path="/checkout"
-            element={
-              <>
-                <Header />
-                <Checkout />
-              </>
-            }
-          />
-          {/*  */}
         </Routes>
       </div>
     </Router>

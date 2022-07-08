@@ -24,7 +24,6 @@ function App() {
           {/* ------Login----- */}
           <Route path="/login" element={<Login />} />
           {/*  */}
-          {/* ------Checkout---- */}
           <Route
             path="/checkout"
             element={
@@ -34,7 +33,6 @@ function App() {
               </>
             }
           />
-          {/*  */}
         </Routes>
       </div>
     </Router>
