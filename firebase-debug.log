@@ -1,0 +1,23 @@
+[debug] [2022-07-09T10:16:29.423Z] ----------------------------------------------------------------------
+[debug] [2022-07-09T10:16:29.425Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pino\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-09T10:16:29.426Z] CLI Version:   11.2.1
+[debug] [2022-07-09T10:16:29.426Z] Platform:      win32
+[debug] [2022-07-09T10:16:29.426Z] Node Version:  v16.15.1
+[debug] [2022-07-09T10:16:29.426Z] Time:          Sat Jul 09 2022 17:16:29 GMT+0700 (Indochina Time)
+[debug] [2022-07-09T10:16:29.426Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-09T10:16:29.484Z] > refreshing access token with scopes: []
+[debug] [2022-07-09T10:16:29.486Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-09T10:16:29.486Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-09T10:16:29.657Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-07-09T10:16:29.657Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-09T10:16:29.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2022-07-09T10:16:29.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 401
+[debug] [2022-07-09T10:16:29.839Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":401,"message":"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"CREDENTIALS_MISSING","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","method":"google.firebase.service.v1beta1.FirebaseProjectService.GetFirebaseProject"}}]}}
+[debug] [2022-07-09T10:16:29.840Z] HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-07-09T10:16:29.841Z] FirebaseError: HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Pino\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Pino\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
