@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../DataLayer/Datalayer";
 import { Link } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import "./Login.css";
+import "../AuthForm/AuthStyle.css";
 
 function Login() {
   // const [email, setEmail] = useState("");
