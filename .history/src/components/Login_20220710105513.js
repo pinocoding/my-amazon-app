@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import { LoginContext } from "./store/LoginContext";
+import { AuthContext } from "./store/AuthContext";
 import { Link } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import "./Login.css";
 
 function Login() {
   // const [email, setEmail] = useState("");
-  const context = useContext(LoginContext);
+  const context = useContext(AuthContext);
 
   return (
     <div className="login">

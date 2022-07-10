@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./view/App";
 import reportWebVitals from "./reportWebVitals";
-import reducer, { initialState } from "./components/DataLayer/reducer";
-import { StateProvider } from "./components/DataLayer/Datalayer";
-import { AuthProvider } from "./components/DataLayer/Datalayer";
+import reducer, { initialState } from "./components/reducer";
+import { StateProvider } from "./components/StateProvider";
+import { AuthProvider } from "./components/store/LoginContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
