@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import { LoginContext } from "./store/LoginContext";
-import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "./Datalayer/Datalayer;
+import { Link } from "react-router-dom";
 
 import "./Login.css";
-function SignIn() {
-  const context = useContext(LoginContext);
-  console.log(context.email, context.password);
 
+function CreateAccount() {
+  const context = useContext(AuthContext);
   return (
     <div className="login">
       <Link to="/">
@@ -18,33 +17,39 @@ function SignIn() {
       </Link>
       <div className="login__container">
         <div className="login__containertop">
-          <h1>Sign In</h1>
-          <form className="login__form signin__form">
-            <div className="signin__password">
-              <h5>Password</h5>
-              <a href="#">Forgot your password ?</a>
-            </div>
-
+          <h1>Create account</h1>
+          <form className="login__form">
+            {/* <h5>Your name</h5>
+            <input className="login__input" type="text" /> */}
+            <h5>Mobile number or email</h5>
+            <input
+              className="login__input"
+              type="text"
+              value={context.email}
+              onChange={(e) => context.setEmail(e.target.value)}
+            />
+            <h5>Password</h5>
             <input
               className="login__input"
               type="password"
-              name="password"
               value={context.password}
               onChange={(e) => context.setPassword(e.target.value)}
             />
+
+            {/* <h5>Re-enter password</h5>
+            <input className="login__input" type="password" /> */}
             <p className="login__button">
-              <button type="submit" onClick={context.handleSignin}>
-                Sign In
-              </button>
+              <button onClick={context.handleSignup}>Create account</button>
             </p>
-            <div className="login__text login__checkbox">
-              <input type="checkbox" name="rememberMe" />
-              <p>
-                &nbsp;Keep me signed in. <a href="#">Details</a>
-              </p>
-            </div>
+
+            <p className="login__text">
+              By continuing, you agree to Amazon's &nbsp;
+              <a href="#">Conditions of Use</a> &nbsp;and &nbsp;
+              <a href="#">Privacy Notice</a>
+            </p>
           </form>
         </div>
+
         <ul className="login__ect">
           <li>
             <a href="#">Condition of Use</a>
@@ -62,4 +67,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default CreateAccount;

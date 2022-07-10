@@ -1,9 +1,9 @@
 import "./App.css";
 import Header from "../components/Header/Header";
 import Home from "../components/Home/Home";
-import Checkout from "../components/CheckOut/Checkout";
+import Checkout from "../components/CheckOut/CheckOut";
 import Login from "../components/AuthForm/Login";
-import SignIn from "../components/AuthForm/SignIn";
+import SignIn from "../components/SignIn";
 import CreateAccount from "../components/AuthForm/CreateAccount";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
