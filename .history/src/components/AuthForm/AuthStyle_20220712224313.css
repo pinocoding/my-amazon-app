@@ -1,0 +1,154 @@
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__logo {
+
+  object-fit: contain;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.login__container {
+  width: 400px;
+}
+.login__containertop{
+  margin-top: -50px;
+
+  border: 1px solid #e7e7e7 ;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.login__input {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.login__button > button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding:10px;
+  border-radius: 5px;
+  background: #f0c14b;
+  font-size: 15px;
+
+}
+.login__text {
+  font-size: 15px;
+
+}
+.login__help {
+
+  margin-top: 20px;
+  display:  flex;
+  flex: 1;
+  align-items: center;
+}
+.login__help  a{
+
+  text-decoration: none;
+  color:#111;
+}
+.login__newtoamazone {
+  margin-top: 40px;
+
+  text-align: center;
+  position: relative;
+  top: 2px;
+  padding-top: 1px;
+  margin-bottom: 14px;
+  line-height: 0;
+}
+.login__newtoamazone > h5 {
+
+  line-height: 1;
+  font-size: 15px;
+  color: #767676;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 8px 0 7px;
+}
+.login__newtoamazone::after {
+  content: "";
+  width: 100%;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-top: 1px solid #e7e7e7;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  z-index: 1;
+}
+.login__buttontwo {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+
+
+}
+.login__ect {
+  position: relative;
+  z-index: 2;
+  color:#767676;
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+
+.login__ect > li >a {
+  text-decoration: none;
+}
+
+.login__container span {
+
+  display:table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signin__password{
+  margin-top: 20px;
+  display:  flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.signin__password > a  {
+  text-decoration: none;
+  font-size: 13px;
+
+}
+.login__checkbox {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: none;
+}
+.login__checkbox >p > a {
+  text-decoration: none;
+}
+.login__checkbox >p > a:hover {
+ text-decoration: dashed;
+}
+
+.login__errorMsg {
+  font-size: 5px;
+}
