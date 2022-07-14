@@ -82,15 +82,13 @@ z-index: 100;
   padding-bottom: 5px;
 }
 .header__optionLineOne {
-  font-size: 12px;
+  font-size: 15px;
 }
 .header__optionLineTwo {
 display: flex;
-font-size: 15px;
+font-size: 20px;
 }
-.header__optionLineTwoDropDownIcon {
-  font-size: 20px! important;
-}
+
 
 
 .header__optionBasket {
@@ -239,3 +237,6 @@ font-size: 10px;
   list-style-type: none;
 }
 
+.header__optionLineTwoDropDownIcon {
+  font-size: 3px;
+}

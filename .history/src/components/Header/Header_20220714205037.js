@@ -90,9 +90,8 @@ function Header() {
 
                 <div className="header__optionLineTwo">
                   <p>Account & Lists</p>
-                  <div>
-                    <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />
-                  </div>
+                  <div></div>
+                  <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />
                 </div>
               </div>
             </Link>

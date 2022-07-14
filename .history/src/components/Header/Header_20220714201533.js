@@ -76,7 +76,10 @@ function Header() {
               <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />
             </div>
           </div>
-          <div className="header__option header__optionDropDown">
+          <div
+            className="header__option header__optionDropDown"
+            onMouseOver={handlemouseover}
+          >
             <Link
               to="/login"
               style={{ textDecoration: "none", color: "white" }}
@@ -89,10 +92,9 @@ function Header() {
                 </div>
 
                 <div className="header__optionLineTwo">
-                  <p>Account & Lists</p>
-                  <div>
-                    <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />
-                  </div>
+                  <span>Account & Lists</span>
+
+                  <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />
                 </div>
               </div>
             </Link>

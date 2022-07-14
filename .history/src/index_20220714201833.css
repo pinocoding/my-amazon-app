@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/amazon-ember');
-* {
-  font-family: 'Amazon Ember Display', sans-serif;
+body {
   margin: 0;
   padding:0;
- }
+
+}
 

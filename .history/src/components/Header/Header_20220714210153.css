@@ -82,14 +82,23 @@ z-index: 100;
   padding-bottom: 5px;
 }
 .header__optionLineOne {
-  font-size: 12px;
+  font-size: 10px;
 }
 .header__optionLineTwo {
-display: flex;
-font-size: 15px;
+  display: flex;
+  position: static;
+  /* float: none; */
+  /* -webkit-box-align: center; */
+  /* -moz-box-align: center;
+  -ms-flex-align: center; */
+  /* -webkit-align-items: center; */
+  /* align-items: center; */
+  /* padding: 0;
+  margin: 0; */
 }
 .header__optionLineTwoDropDownIcon {
-  font-size: 20px! important;
+
+
 }
 
 
@@ -238,4 +247,3 @@ font-size: 10px;
   line-height:2;
   list-style-type: none;
 }
-
