@@ -1,0 +1,142 @@
+
+.cardone{
+ display: flex;
+ flex-direction: column;
+ background-color: white;
+
+ justify-content: flex-end;
+ margin:10px;
+ width: 100%;
+ max-height: 500px;
+ min-height: 100px;
+ z-index: 1;
+ padding: 10px 30px;
+ text-align: left;
+}
+.cardone__info {
+
+}
+.cardone  .cardone__img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: fill;
+
+}
+.cardone__title{
+font-size: 20px;
+font-weight: 600;
+margin: 20px 0;
+}
+
+.cardone > a {
+font-size: 15px;
+color:cadetblue;
+margin-top: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+a:hover {
+text-decoration: underline;
+}
+/* card2 */
+.cardtwo__title  {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+
+  }
+  .cardtwo{
+    background-color: white;
+
+    margin:10px;
+    width: 100%;
+    max-height: 500px;
+    min-height: 100px;
+    z-index: 1;
+    padding: 10px 30px;
+
+   }
+
+.cardtwo__uibody  {
+  display: grid;
+  width: 300px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap : 20px;
+  margin-bottom: 40px;
+}
+
+
+ .cardtwo__uibody__cell {
+width: 100%;
+
+}
+.cardtwo__uibody__cell > a {
+  display: inline-block;
+}
+.cardtwo__uibody__cell a > img {
+  object-fit:fill;
+
+  width: 100%;
+  height: 130px;
+}
+.cardtwo__uibody__cell > p {
+
+  font-size: 13px;
+}
+.cardtwo > a {
+  font-size: 15px;
+  color:cadetblue;
+  text-decoration: none;
+
+  cursor: pointer;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+/* --- */
+/* -----Card3---- */
+.cardthree{
+  background-color: transparent;
+ margin:10px;
+width: 100%;
+max-width: 400px;
+  max-height: 500px;
+  min-height: 100px;
+  z-index: 1;
+
+  text-align: center;
+  justify-content: center;
+
+ }
+.cardthree__infoup {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  margin-bottom: 30px;
+
+
+}
+.cardthree__infoup h3 {
+margin-top : 5px;
+margin-bottom: 30px
+}
+.cardthree__infoup button {
+  /* outline: none; */
+  border: none;
+padding: 8px 60px;
+font-size: 20px;
+border-radius:10px;
+margin-bottom: 30px;
+background-color:#f0c14b;
+}
+
+.carthree__infoimg > img  {
+  width: 80%;
+  min-height: 100%;
+  object-fit: fill;
+
+}
+
+/* ------//------ */
