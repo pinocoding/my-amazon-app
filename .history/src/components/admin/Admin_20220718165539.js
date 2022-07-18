@@ -11,23 +11,12 @@ import {
 } from "firebase/firestore";
 
 function Admin() {
-  const [newName, setNewName] = useState("");
-  const [newAge, setNewAge] = useState(0);
-  //
-  const [newId, setNewId] = useState("");
-  const [newTitle, setTitle] = useState("");
-  const [newPrice, setPrice] = useState("");
-  const [newDescription, setDescription] = useState("");
-  const [newCategory, setCategory] = useState("");
-  const [newImage, setImage] = useState("");
-  const [newRating, setRating] = useState("");
   //
 
   //
 
   const createHeadSetsProduct = async (e) => {
     for (let i = 1; i < 100; ++i) {
-      const newId = i;
       e.preventDefault();
 
       await addDoc(headSetProDuctsCollectionRef, {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./admin.css";
-import { db } from "../firebase";
+import { db, batch } from "../firebase";
 import {
   collection,
   getDocs,
@@ -26,12 +26,11 @@ function Admin() {
   //
 
   const createHeadSetsProduct = async (e) => {
-    for (let i = 1; i < 100; ++i) {
-      const newId = i;
+    for (let i = 0; i < 100; ++i) {
       e.preventDefault();
 
       await addDoc(headSetProDuctsCollectionRef, {
-        id: Number(newId),
+        id: newId,
         title: newTitle,
         name: newName,
         price: Number(newPrice),

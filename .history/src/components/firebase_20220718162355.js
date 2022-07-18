@@ -18,6 +18,6 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-// const batch = db.batch();
+const batch = db.batch();
 const auth = firebase.auth();
 export { db, auth };

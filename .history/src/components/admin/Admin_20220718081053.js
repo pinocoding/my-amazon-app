@@ -24,30 +24,23 @@ function Admin() {
   //
 
   //
-
-  const createHeadSetsProduct = async (e) => {
-    for (let i = 1; i < 100; ++i) {
-      const newId = i;
-      e.preventDefault();
-
-      await addDoc(headSetProDuctsCollectionRef, {
-        id: Number(newId),
-        title: newTitle,
-        name: newName,
-        price: Number(newPrice),
-        description: newDescription,
-        category: newCategory,
-        image: newImage,
-        rating: Number(newRating),
-      });
-    }
+  const createHeadSetsProduct = async () => {
+    await addDoc(headSetProDuctsCollectionRef, {
+      id: newId,
+      title: newTitle,
+      name: newName,
+      price: Number(newPrice),
+      description: newDescription,
+      category: newCategory,
+      image: newImage,
+      rating: Number(newRating),
+    });
   };
-
   //
   const [users, setUsers] = useState([]);
   const usersCollectionRef = collection(db, "users");
   const [products, setProducts] = useState([]);
-  const headSetProDuctsCollectionRef = collection(db, "headsets");
+  const headSetProDuctsCollectionRef = collection(db, "products");
 
   const createUser = async () => {
     await addDoc(usersCollectionRef, { name: newName, age: Number(newAge) });

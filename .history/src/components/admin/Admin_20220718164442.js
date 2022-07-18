@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./admin.css";
-import { db } from "../firebase";
+import { db, batch } from "../firebase";
 import {
   collection,
   getDocs,
@@ -24,25 +24,20 @@ function Admin() {
   //
 
   //
-
   const createHeadSetsProduct = async (e) => {
-    for (let i = 1; i < 100; ++i) {
-      const newId = i;
-      e.preventDefault();
+    e.preventDefault();
 
-      await addDoc(headSetProDuctsCollectionRef, {
-        id: Number(newId),
-        title: newTitle,
-        name: newName,
-        price: Number(newPrice),
-        description: newDescription,
-        category: newCategory,
-        image: newImage,
-        rating: Number(newRating),
-      });
-    }
+    await addDoc(headSetProDuctsCollectionRef, {
+      id: newId,
+      title: newTitle,
+      name: newName,
+      price: Number(newPrice),
+      description: newDescription,
+      category: newCategory,
+      image: newImage,
+      rating: Number(newRating),
+    });
   };
-
   //
   const [users, setUsers] = useState([]);
   const usersCollectionRef = collection(db, "users");
