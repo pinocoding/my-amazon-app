@@ -1,0 +1,10 @@
+.button__container {
+  justify-content: center;
+  margin: 0 auto;
+}
+button {
+padding : 10px;
+margin-bottom: 20px;
+
+
+}

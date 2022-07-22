@@ -1,0 +1,12 @@
+.admin {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+

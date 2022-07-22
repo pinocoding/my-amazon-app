@@ -1,0 +1,14 @@
+.admin {
+  width: 100px;
+  heidth: 50px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+
