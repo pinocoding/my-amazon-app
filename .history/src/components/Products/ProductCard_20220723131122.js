@@ -8,8 +8,9 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import StarPurple500SharpIcon from "@mui/icons-material/StarPurple500Sharp";
 
 import "./Product.css";
+import ProductDetails from "./ProductDetails";
 
-function ProductCard() {
+function ProductCard({ col, id, orderBy }) {
   const context = useContext(AuthContext);
   // const SetCurrentItem = context.SetCurrentItem;
   const list = context.list;
@@ -24,8 +25,8 @@ function ProductCard() {
     const fetchData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .limit(12)
         .onSnapshot(function (querySnapshot) {
           const items = [];
@@ -46,8 +47,8 @@ function ProductCard() {
       const fetchNextData = async () => {
         await firebase
           .firestore()
-          .collection("headsets")
-          .orderBy("id", "desc")
+          .collection(col)
+          .orderBy(id, orderBy)
           .limit(12)
           .startAfter(item.id)
           .onSnapshot(function (querySnapshot) {
@@ -68,8 +69,8 @@ function ProductCard() {
     const fetchPreviousData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .endBefore(item.id)
         .limitToLast(12)
         .onSnapshot(function (querySnapshot) {
@@ -83,7 +84,9 @@ function ProductCard() {
     };
     fetchPreviousData();
   };
-  const handleproduct = () => {};
+  const handleproduct = (item) => {
+    ProductDetails(item);
+  };
 
   //
 

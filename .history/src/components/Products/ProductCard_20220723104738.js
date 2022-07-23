@@ -9,7 +9,7 @@ import StarPurple500SharpIcon from "@mui/icons-material/StarPurple500Sharp";
 
 import "./Product.css";
 
-function ProductCard() {
+function ProductCard({ col, id, orderBy }) {
   const context = useContext(AuthContext);
   // const SetCurrentItem = context.SetCurrentItem;
   const list = context.list;
@@ -19,25 +19,28 @@ function ProductCard() {
 
   // !-----
 
-  useEffect((e) => {
-    // e.preventDefault();
-    const fetchData = async () => {
-      await firebase
-        .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
-        .limit(12)
-        .onSnapshot(function (querySnapshot) {
-          const items = [];
-          querySnapshot.forEach(function (doc) {
-            items.push({ key: doc.id, ...doc.data() });
-          });
+  useEffect(
+    (e) => {
+      // e.preventDefault();
+      const fetchData = async () => {
+        await firebase
+          .firestore()
+          .collection(col)
+          .orderBy(id, orderBy)
+          .limit(12)
+          .onSnapshot(function (querySnapshot) {
+            const items = [];
+            querySnapshot.forEach(function (doc) {
+              items.push({ key: doc.id, ...doc.data() });
+            });
 
-          setList(items);
-        });
-    };
-    fetchData();
-  }, []);
+            setList(items);
+          });
+      };
+      fetchData();
+    },
+    [item]
+  );
 
   const showNext = ({ item }) => {
     if (list.length === 0) {
@@ -46,8 +49,8 @@ function ProductCard() {
       const fetchNextData = async () => {
         await firebase
           .firestore()
-          .collection("headsets")
-          .orderBy("id", "desc")
+          .collection(col)
+          .orderBy(id, orderBy)
           .limit(12)
           .startAfter(item.id)
           .onSnapshot(function (querySnapshot) {
@@ -68,8 +71,8 @@ function ProductCard() {
     const fetchPreviousData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .endBefore(item.id)
         .limitToLast(12)
         .onSnapshot(function (querySnapshot) {
@@ -83,8 +86,9 @@ function ProductCard() {
     };
     fetchPreviousData();
   };
-  const handleproduct = () => {};
-
+  const handleproduct = (item) => {
+    context.setCurrentItem(item);
+  };
   //
 
   return (
@@ -93,7 +97,7 @@ function ProductCard() {
         <div className="section-card">
           {list.map((item) => {
             return (
-              <div onClick={() => handleproduct()}>
+              <div onClick={() => handleproduct(item)}>
                 <div className="card" key={item.id}>
                   {item.onsales ? (
                     <div className="card__sales">

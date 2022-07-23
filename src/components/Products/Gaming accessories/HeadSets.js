@@ -13,7 +13,7 @@ function HeadSets() {
         </div>
         <div className="headsets__containerright">
           <div className="headsets__row">
-            <ProductCard col={"headsets"} id={"id"} orderBy={"desc"} />
+            <ProductCard />
           </div>
         </div>
       </div>

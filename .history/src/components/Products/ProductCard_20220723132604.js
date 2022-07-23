@@ -47,7 +47,7 @@ function ProductCard() {
         await firebase
           .firestore()
           .collection("headsets")
-          .orderBy("id", "desc")
+          .orderBy(id, orderBy)
           .limit(12)
           .startAfter(item.id)
           .onSnapshot(function (querySnapshot) {

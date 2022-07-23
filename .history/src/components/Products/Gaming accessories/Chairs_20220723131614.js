@@ -1,7 +1,8 @@
 import React from "react";
 import ProductCard from "./../ProductCard.js";
-import OptionLeft from "./../OptionLeft.js";
-function ToysGames() {
+import OptionLeft from "../OptionLeft.js";
+
+function Chairs() {
   return (
     <div className="headsets">
       <div className="headsets__toolbar"></div>
@@ -13,7 +14,7 @@ function ToysGames() {
         </div>
         <div className="headsets__containerright">
           <div className="headsets__row">
-            <ProductCard col={"mouses"} id={"id"} orderBy={"desc"} />
+            <ProductCard col={"chairs"} id={"id"} orderBy={"desc"} />
           </div>
         </div>
       </div>
@@ -21,4 +22,4 @@ function ToysGames() {
   );
 }
 
-export default ToysGames;
+export default Chairs;

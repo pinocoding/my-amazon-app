@@ -46,8 +46,8 @@ function ProductCard() {
       const fetchNextData = async () => {
         await firebase
           .firestore()
-          .collection("headsets")
-          .orderBy("id", "desc")
+          .collection(col)
+          .orderBy(id, orderBy)
           .limit(12)
           .startAfter(item.id)
           .onSnapshot(function (querySnapshot) {
@@ -68,8 +68,8 @@ function ProductCard() {
     const fetchPreviousData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .endBefore(item.id)
         .limitToLast(12)
         .onSnapshot(function (querySnapshot) {

@@ -1,8 +1,7 @@
 import React from "react";
 import ProductCard from "./../ProductCard.js";
 import OptionLeft from "./../OptionLeft.js";
-
-function ComputerAccess() {
+function HeadSets() {
   return (
     <div className="headsets">
       <div className="headsets__toolbar"></div>
@@ -14,7 +13,7 @@ function ComputerAccess() {
         </div>
         <div className="headsets__containerright">
           <div className="headsets__row">
-            <ProductCard col={"chairs"} id={"id"} orderBy={"desc"} />
+            <ProductCard />
           </div>
         </div>
       </div>
@@ -22,4 +21,4 @@ function ComputerAccess() {
   );
 }
 
-export default ComputerAccess;
+export default HeadSets;

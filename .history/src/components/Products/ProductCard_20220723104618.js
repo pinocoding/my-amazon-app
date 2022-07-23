@@ -9,7 +9,7 @@ import StarPurple500SharpIcon from "@mui/icons-material/StarPurple500Sharp";
 
 import "./Product.css";
 
-function ProductCard() {
+function ProductCard({ col, id, orderBy }) {
   const context = useContext(AuthContext);
   // const SetCurrentItem = context.SetCurrentItem;
   const list = context.list;
@@ -24,8 +24,8 @@ function ProductCard() {
     const fetchData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .limit(12)
         .onSnapshot(function (querySnapshot) {
           const items = [];
@@ -46,8 +46,8 @@ function ProductCard() {
       const fetchNextData = async () => {
         await firebase
           .firestore()
-          .collection("headsets")
-          .orderBy("id", "desc")
+          .collection(col)
+          .orderBy(id, orderBy)
           .limit(12)
           .startAfter(item.id)
           .onSnapshot(function (querySnapshot) {
@@ -68,8 +68,8 @@ function ProductCard() {
     const fetchPreviousData = async () => {
       await firebase
         .firestore()
-        .collection("headsets")
-        .orderBy("id", "desc")
+        .collection(col)
+        .orderBy(id, orderBy)
         .endBefore(item.id)
         .limitToLast(12)
         .onSnapshot(function (querySnapshot) {
@@ -83,8 +83,10 @@ function ProductCard() {
     };
     fetchPreviousData();
   };
-  const handleproduct = () => {};
-
+  const handleproduct = (item, e) => {
+    context.setCurrentItem(item);
+    e.preventDefault();
+  };
   //
 
   return (
@@ -93,7 +95,7 @@ function ProductCard() {
         <div className="section-card">
           {list.map((item) => {
             return (
-              <div onClick={() => handleproduct()}>
+              <div onClick={() => handleproduct(item)}>
                 <div className="card" key={item.id}>
                   {item.onsales ? (
                     <div className="card__sales">
