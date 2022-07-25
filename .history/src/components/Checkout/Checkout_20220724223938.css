@@ -1,0 +1,21 @@
+.checkout__container {
+
+  width: 100%;
+  margin: 70px 0 10px;
+  margin:
+    display: flex;
+  /* justify-content: center; */
+}
+
+.checkoutProduct__title {
+  width: 850px;
+}
+
+.checkout__container .checkout__left {
+  width: 60%;
+  /* background-color: blueviolet; */
+}
+
+.checkout__container .checkout__right {
+  width: 30%;
+}

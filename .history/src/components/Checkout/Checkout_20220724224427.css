@@ -1,0 +1,18 @@
+.checkout__container {
+
+  width: 100%;
+  padding: 70px 10px;
+
+
+  display: flex;
+
+}
+
+.checkoutProduct__title {
+  width: 850px;
+}
+
+.checkout__container .checkout__left {
+  width: 80%;
+  /* background-color: blueviolet; */
+}

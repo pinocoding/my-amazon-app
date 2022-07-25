@@ -1,0 +1,19 @@
+.checkout__container {
+
+  width: 100%;
+  padding-top: 70px;
+
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.checkout__container .checkout__left {
+  width: 70%;
+  /* background-color: blueviolet; */
+}
+
+.checkoutProduct__subtotal {}

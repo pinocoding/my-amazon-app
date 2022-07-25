@@ -1,0 +1,12 @@
+.checkout__container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.checkout__container .checkout__left {}
+
+.checkout__container .checkout__right {
+  width: 30%;
+}
