@@ -1,0 +1,8 @@
+.sort__column {
+  padding: 5px 20px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+
+  outline: none;
+}

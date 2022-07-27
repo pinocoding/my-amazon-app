@@ -1,0 +1,16 @@
+import React, { useState } from "react";
+
+function OptionLeft() {
+  return (
+    <div>
+      <select value={selected} onChange={handleChange}>
+        <option value="">Sorted by Featured</option>
+        <option value="1">Price: Low to High</option>
+        <option value="2">Price: High to Low</option>
+        <option value="3">Avg, Customer Review</option>
+      </select>
+    </div>
+  );
+}
+
+export default OptionLeft;

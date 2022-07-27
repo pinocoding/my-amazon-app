@@ -1,0 +1,21 @@
+.checkoutProduct__incdec {
+  width: 100px;
+  justify-content: center;
+}
+.checkoutProduct__incdec > span {
+      margin: 0 20px;
+}
+.checkoutProduct__incdecbtn {
+  padding:2px 7px;
+
+  border:none;
+  background-color: #f0c14b;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+.checkoutProduct__incdecbtn:hover {
+  color:white
+
+}

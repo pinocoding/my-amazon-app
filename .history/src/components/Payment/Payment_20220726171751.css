@@ -1,0 +1,13 @@
+.payment {
+  max-width: 1400px;
+  margin: 60px auto;
+  background-color: white;
+
+}
+.payment h1 {
+  text-align: center;
+
+}
+.payment h1 a {
+  text-decoration: none;
+}
