@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+
+}
+.home__cardlayout{
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+
+}
+
+@media all and (max-width: 480px) {
+
+
+
+  .home {
+    display: flex;
+     max-width: 100%;
+}
+.home__cardlayout {
+  flex-wrap: wrap;
+}
+
+}

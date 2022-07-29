@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  max-width: 100%;
+}
+.home__cardlayout{
+  display: grid;
+
+  grid-template-columns: auto auto auto auto  ;
+
+  padding: 20px;
+  gap: 20px;
+}
+
+@media  screen and (max-width: 768px) {
+  .home__cardlayout {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+}

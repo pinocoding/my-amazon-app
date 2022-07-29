@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  max-width: 100%;
+}
+.home__cardlayout{
+  max-width: 100%;
+  display: flex;
+  z-index: 1;
+}
+
+@media  screen and (max-width: 768px) {
+  .home__cardlayout {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+}

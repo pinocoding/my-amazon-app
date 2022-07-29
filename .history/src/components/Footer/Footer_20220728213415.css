@@ -1,0 +1,15 @@
+ .footer__container {
+  width: 100%;
+  background-color: #232F3E;
+  height: 300px;
+ }
+ .footer__backtotop {
+  width: 100%;
+  background-color: #37475A;
+  display:flex;
+  justify-content: center;
+ }
+.footer__backtotop a {
+  text-decoration: none;
+
+}

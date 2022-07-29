@@ -1,0 +1,23 @@
+ .footer__container {
+  width: 100%;
+  background-color: #232F3E;
+
+ }
+ .footer__backtotop {
+  padding: 10px;
+  width: 100%;
+  background-color: #37475A;
+  display:flex;
+  justify-content: center;
+ }
+.footer__backtotop a {
+  text-decoration: none;
+  color:white;
+  font-size: 25px;
+
+
+}
+.footer__middle {
+  background-color: #232F3E;
+  height: 300px;
+}

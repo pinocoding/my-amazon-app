@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  max-width: 100%;
+}
+.home__cardlayout{
+  display: flex;
+  padding: 20px;
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+  .home {
+    display: flex;
+    /* justify-content: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 1500px;
+    max-width: 100%;
+
+
+
+}
+.home__cardlayout {
+  display: flex;
+  /* padding: 20px;
+
+}

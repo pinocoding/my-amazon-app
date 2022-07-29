@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+
+}
+.home__container {
+    max-width: 100%;
+
+}
+.home__cardlayout{
+  display: flex;
+
+  padding: 20px 0px;
+
+}
+@media only screen and (min-width: 768px)
