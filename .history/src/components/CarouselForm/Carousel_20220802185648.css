@@ -1,0 +1,182 @@
+.container {
+  max-width: 100%;
+  max-height: 600px;
+
+}
+
+.slick-slide img {
+   min-width: 100%;
+    z-index: -100;
+   margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.8));
+  }
+
+.slick-next{
+    width: 115px !important;
+    z-index: 10 !important;
+    left: 98% !important;
+
+  }
+  .slick-prev {
+    width: 115px !important;
+    z-index: 10 !important;
+    left: 2% !important;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 50px !important;
+    opacity: 1 !important;
+    color:black !important;
+    opacity: 0.5 !important;
+
+
+  }
+  .topsellercarousel h4 {
+    margin-bottom: 2px;
+  }
+
+
+  .topsellercarousel  {
+    padding: 10px 10px;
+
+    max-height: 350px;
+  }
+  /* .slick-list {
+    max-height: 390px !important;
+  } */
+
+
+.slider__img {
+min-height: 330px !important;
+margin-right: 10px;
+}
+.slider__img > a > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+.slick-prev, .slick-next {
+  top : 45% !important;
+}
+.card__carrousel {
+  background: white;
+  color: black;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+
+  text-align: center;
+  font-family: arial;
+
+  transition: transform .2s;
+  /* Animation */
+}
+
+
+
+.card__sales {
+  overflow: hidden;
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+
+
+
+}
+
+.card__title {
+  font-size: 14px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+}
+
+.card__sales>p {
+  position: absolute;
+  text-decoration: none;
+  width: 166px;
+
+ display: block;
+  transform: rotate(45deg);
+  top: 30px;
+  right: -40px;
+
+  background-color: palevioletred;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  transform: scale(1.01);
+
+}
+
+.card__carrousel .card__description {
+
+  display: block;
+  line-height: 1;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+}
+
+.card__carrousel>img {
+  width: 100%;
+  /* max-height: 300px; */
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.price {
+  color: black;
+  font-size: 13px;
+
+}
+
+.card__carrousel .rating {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ff9f43;
+}
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+@media only screen and (max-width: 768px) {
+  .topsellercarousel  {
+    max-height: 82px;
+  }
+  .slick-prev, .slick-next  {
+    display: none !important;
+  }
+  .slick-slide img {
+    max-width: 150% !important;
+    margin-top: 0px !important;
+    /* min-height: 77px !important; */
+    position: relative;
+
+}
+.slider__img {
+  min-height: 100px !important;
+  margin-right: 10px !important;
+
+
+
+
+
+}
+}

@@ -1,0 +1,74 @@
+.container {
+max-width: 100%;
+  max-width: 100%;
+  /* padding: 20px; */
+max-height: 600px;
+
+}
+
+.slick-slide img {
+   min-width: 100%;
+    z-index: -100;
+
+    /* margin-top:25px !important; */
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.8));
+  }
+
+.slick-next{
+    width: 115px !important;
+    z-index: 10 !important;
+
+  }
+  .slick-prev {
+    width: 115px !important;
+    z-index: 10 !important;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 50px !important;
+    opacity: 1 !important;
+    color:black !important;
+    opacity: 0.5 !important;
+
+
+  }
+  .topsellercarousel h4 {
+    margin-bottom: 2px;
+  }
+
+
+  .topsellercarousel  {
+    padding: 10px 10px;
+
+    max-height: 350px;
+  }
+
+
+.slider__img {
+min-height: 300px;
+margin-right: 10px;
+}
+.slider__img > a > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .topsellercarousel  {
+    max-height: 82px;
+  }
+  .slick-prev, .slick-next  {
+    display: none !important;
+  }
+  .slick-slide img {
+    max-width: 150% !important;
+    margin-top: 0px !important;
+    min-height: 77px !important;
+    position: relative;
+
+}
+
+
+
+
+}
