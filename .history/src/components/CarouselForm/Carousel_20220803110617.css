@@ -1,0 +1,96 @@
+.slick-slide img {
+  width: 100%;
+  display: block;
+
+}
+a {
+  text-decoration: none;
+
+}
+button[type="button"] {
+left:none !important;
+}
+.slick-prev {
+  left: 2px !important;
+}
+/*  */
+.card__carrousel {
+  background: white;
+  color: black;
+  padding: 10px;
+  position: relative;
+  max-width: 100%;
+  max-height: 400px;
+  text-align: center;
+  transition: transform 0.2s;
+  overflow: hidden;
+
+}
+
+.card__carrouselTitle {
+  font-size: 14px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+}
+
+.card__carrouselRibbon  {
+  position: absolute;
+  text-decoration: none;
+  z-index: 9999;
+  width: 166px;
+  display: block;
+  transform: rotate(45deg);
+  top: 30px;
+  right: -40px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.card__carrouselImg  {
+  max-width: 100%;
+  max-height: 250px;
+
+
+}
+
+.card__carrouselImg  > img{
+  width: 95%;
+object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.card__carrouselPrice {
+  color: black;
+  font-size: 15px;
+
+}
+
+.card__carrouselRating {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ff9f43;
+}
+.card__carrouselDes {
+  font-size: 11px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+}
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+/*  */

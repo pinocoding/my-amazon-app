@@ -1,0 +1,42 @@
+{
+  "Hello" : "こんにちは",
+  "Select your address": "場所を選択",
+  "All" : "すべて",
+  "Hello guest": "こんにちは, ログイン",
+  "Account & Lists":"アカウント＆リスト",
+  "Sign-In":"ロギング",
+  "Return" :"返品もこちら",
+  "& Orders": "注文履歴",
+  "Sign Out":"ログアウト",
+  "New Customer?" : "初めてご利用ですか? ",
+  "Start Here": " 新規登録はこちら",
+  "Your List" : "リスト",
+  "Your Account": "アカウントサービス",
+  "Create a List": "新しいリストを作成する",
+
+  "Account":"アカウントサービス",
+  "Orders": "注文履歴",
+
+
+
+"Email or mobile phone number":"Eメールまたは携帯電話番号",
+"Continue": "次に進む",
+"By continuing, you agree to Amazons" : "Amazonの利用規約とプライバシー規約に同意いただける場合はログインしてください。",
+
+"Need help ?":"お困りですか?",
+"New to Amazone ?":"初めてAmazonをご利用ですか？",
+"Create your Amazon account":"Amazonアカウントを作成する",
+" Conditions of Use ":"利用規約",
+" Privacy Notice ":" プライバシー規約 ",
+" Help ":"ヘルプ ",
+"© 1996-2022, Amazon.com, Inc. or its affiliates":"© 1996-2022, Amazon.com, Inc. or its affiliates",
+"Password":"パスワード",
+"Forgot your password?":"パスワードを忘れた場合?",
+"Keep me signed in":"ログインしたままにする",
+" Details":"詳細"
+
+
+
+
+
+}

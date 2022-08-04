@@ -1,0 +1,45 @@
+.home {
+  margin-top: 55px;
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+
+}
+.home__container{
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.header__carousel {
+  width: 100%;
+
+  margin-bottom:300x;
+}
+.carousel h4 ,.carouseltest h4{
+  padding:0 10px;
+
+}
+.home__cardlayout{
+  display: flex;
+}
+.carousel,.carouseltest  {
+ width: 100%;
+ padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-top:0;
+  }
+  .home__cardlayout {
+    flex-wrap: wrap;
+    padding:0;
+  }
+
+
+}
