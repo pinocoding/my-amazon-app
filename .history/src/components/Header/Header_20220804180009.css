@@ -1,0 +1,359 @@
+.header {
+width: 100%;
+max-width: 100%;
+display: flex;
+align-items: center;
+background-color: #131921;
+position: fixed;
+top: 0;
+/* right: 0; */
+z-index: 12;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header__optionLanguages option  > span {
+  min-width: 50px;
+  font-size: 10px;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 10px;
+  margin-top: 4px;
+}
+
+.header__search {
+  display:  flex;
+  flex: 1;
+  align-items: center;
+/*  */
+
+}
+.header__searchOption  {
+  color:black;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding: 10px 5px 10px;
+  background-color:gray;
+  border-radius: 5px 0 0 5px;
+}
+.header__searchOption > span {
+  min-width:50px;
+  text-align: center;
+}
+
+.header__searchInput {
+  height: 25px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  padding: 5px;
+  height: 25px !important;
+  background-color: #cd9042;
+  border-radius: 0 5px 5px 0;
+}
+.header__option {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  color:white;
+  position:relative;
+}
+.header__option:hover {
+  cursor: pointer;
+}
+.header__option::after {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  width: 110%;
+  height:110%;
+  left:-10%;
+  bottom: -1%;
+}
+
+
+
+.header__nav {
+  display: flex;
+
+  justify-content: space-evenly;
+  padding-top: 10px;
+  ;
+  padding-bottom: 5px;
+}
+.header__optionLineOne {
+  font-size: 12px;
+}
+.header__optionLineTwo {
+display: flex;
+font-size: 15px;
+}
+.header__optionLineTwoDropDownIcon {
+  font-size: 20px! important;
+}
+
+
+.header__optionBasket {
+color: white;
+display: flex;
+align-items: center;
+font-size: 30px;
+}
+.header__basketCount {
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+
+.header__optionLanguagesimg {
+  width: 100%;
+object-fit: contain;
+
+}
+.header__address {
+  display: flex;
+  color: white;
+  margin-right: 10px;
+  flex-direction: row;
+  padding-bottom: 10px;
+  font-size: 11px;
+  height: 44px;
+
+}
+.header__addressIcon {
+  margin-top: 10px;
+}
+.Header__Overlay {
+  position: fixed ;
+  top: 0 ;
+  left: 0;
+  right:0;
+  bottom: 0;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.3);
+transition:linear 0.2s ;
+}
+.header__optionDropDown {
+  position: relative;
+  display: inline-block;
+}
+
+.header__optionDropDown::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  z-index: 2;
+  top: 20%;
+  left: 20%;
+}
+.Header__dropdowncontent {
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 400px;
+  border-radius: 5px;
+  margin-top: 5px;
+  left: -150%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:15px
+}
+.Header__dropdown-content .Header__dropdownbutn {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.Header__dropdowntopcontent > p {
+  color : black;
+  font-size: 10px;
+  padding-top: 10px;
+}
+.Header__dropdowntopcontent > p >a {
+  text-decoration: none;
+}
+.header__optionDropDown:hover .Header__dropdowncontent {
+  display: block;
+}
+
+.Header__dropdowntop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  transition: linear 0.2s;
+}
+.Header__dropdowntop .Header__dropdownbtn {
+  padding: 5px 50px;
+  border-radius:3px;
+  background:#f0c14b;
+border: none;
+}
+.Header__dropdownbottom {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+
+  color  :black;
+}
+.Header__dropdownLeft {
+
+  width: 50%;
+  border-right: 1px solid #e7e7e7;
+
+}
+.Header__dropdownRight {
+  width: 50%;
+
+
+}
+.Header__dropdowncontentLeft >p {
+  padding-left: 20px;
+  font-weight: 500;
+
+}
+.Header__dropdowncontentRight > p{
+  padding-left: 20px;
+  font-weight: 500;
+}
+.Header__dropdowncontentLeft >ul {
+  font-size: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  line-height: 1.5;
+  list-style-type: none;
+}
+.Header__dropdowncontentRight >ul  {
+  font-size: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  line-height:2;
+  list-style-type: none;
+}
+@media only screen and (max-width: 768px)   {
+
+
+  .header {
+    display: none;
+  }
+
+  .disActive {
+    display: none;
+  }
+  .header__navResponsive {
+    display: block;
+    position:relative;
+    width: 100%;
+    background-color: black;
+    top:0;
+    left:0;
+
+  }
+.header__navResponsiveTop {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  color:white
+}
+.header__menu {
+  margin-left: 7px;
+  transform: scale(1.3);
+}
+
+
+.header__logo {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  transform: scale(0.6);
+}
+.header__navResLeft {
+  display: flex;
+}
+.header__sign span {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 54px;
+
+}
+.header__sign .header__userName {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 35px;
+    background-color: #f0c14b;
+}
+.header__navResLeft .header__signIcon {
+  position: absolute;
+  top: 8px;
+  right: 49px;
+  font-size: 20px;
+}
+.header__navResLeft .header__BasketIcon {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  font-size: 20px;
+
+}
+.header__basketCount span {
+  position: absolute;
+  top: 7px;
+  right: 11px;
+}
+.header__navResponsiveBottom {
+  padding: 0 7px 5px 7px;
+}
+.header__navDropDownActive{
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  color:black;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: width 2s;
+
+
+}
+.header__navDropDownActiveContainer {
+  width: 80%;
+  min-height: 100vh;
+  background-color: white;
+  transition: width 2s;
+  color:Black;
+}
+.header__navDropDownActiveUser {
+  background-color: #f08804;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.header__navDropDownActiveList li {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+}
+
+
