@@ -1,0 +1,444 @@
+Upmostly Logo Upmostly
+🆕 Beginners
+🔥 Advanced
+📝 Tutorials
+
+Build a React Switch Toggle Component
+By James Dietrich
+Beginner React TutorialsReact Components
+Two React Switch components of different colors.
+Learn how to build a React switch component using the native HTML checkbox input! You’ll learn plenty about React checkboxes in the process.
+
+If there’s one UI component that iOS introduced to the world, it’s the switch or toggle as some people refer to it as.
+
+What We’re Building
+Building the React Switch Element using HTML
+Styling our React Switch with CSS
+Using the React Switch Component
+Handling onChange and Passing a Value Through Props
+Changing the Background Color onChange
+Specifying the Switch Color
+
+
+What We’re Building
+Long before iOS introduced the switch, the web’s boolean input was the trusty checkbox. Checkboxes are of course still used to this day, but the switch improved on the checkbox by emulating physical switches found in the real world.
+
+A switch feels tangible. Clicking or tapping it feels like you’re actually using a real-life switch as opposed to clicking a checkbox.
+
+Therefore, in this tutorial, we’re going to build a new React switch component that piggybacks on the native HTML checkbox input. And, using some CSS, we’re going to turn that simple, age-old checkbox into a snazzy looking switch!
+
+Building the React Switch Element using HTML
+Whenever I’m building a brand-new React component, I’ll always, always begin by scaffolding it out in HTML and CSS and when I’m happy with the look and feel, then I’ll move over to writing the JavaScript.
+
+Create a new file called Switch.js and add the following code to it:
+
+Switch.js
+import React from 'react';
+import './Switch.css';
+
+const Switch = () => {
+  return (
+    <>
+      <input
+        className="react-switch-checkbox"
+        id={`react-switch-new`}
+        type="checkbox"
+      />
+      <label
+        className="react-switch-label"
+        htmlFor={`react-switch-new`}
+      >
+        <span className={`react-switch-button`} />
+      </label>
+    </>
+  );
+};
+
+export default Switch;
+
+
+If you saved the component at this point, you’d see a simple checkbox. That’s because we use the checkbox input as the basis for our React switch component.
+
+There’s no need for us to re-invent the wheel here. A switch is, after all, another way of representing a boolean value (true or false). The checkbox input is a native input to handle boolean values.
+
+Styling our React Switch with CSS
+Create a new file under the same directory as the component file, called Switch.css. Drop in the following CSS. Feel free to take a look at each class. I’m not going to explore the CSS in this tutorial as the focus is on JavaScript and React.
+
+Switch.css
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+}
+
+
+Using the React Switch Component
+There’s one last step required in order for us to use the React switch component and that’s importing it into another component file and declaring it:
+
+App.js
+import React from 'react';
+import Switch from "./Switch";
+
+function App() {
+  return (
+    <div className="app">
+      <Switch />
+    </div>
+  );
+}
+
+export default App;
+
+
+Save the file, jump over to your browser and watch the simple checkbox input transform into a rather beautiful looking switch input!
+
+Handling onChange and Passing a Value Through Props
+Although our React switch may look like it’s functional, behind the scenes it’s not actually changing its value.
+
+That’s because our switch’s checkbox input does not have two very important attributes. These are:
+
+checked
+onChange
+The checked attribute stores the input’s current value. In our case, it would be true or false.
+
+The onChange attribute is an event handler that triggers whenever the switch toggles. We’ll use this event handler to change the component’s current value.
+
+
+
+Before we jump into some code, let’s talk about ‘stateless’ components and ‘stateful’ components. A stateless component, or ‘dumb’ component, is a component that does not control its own state. As a result, it requires another component to keep track of the React switch component’s state.
+
+Our React switch component is going to be a stateless component. Therefore, it requires us to pass a value from a parent component through its props.
+
+Open up Switch.js and modify it with the following:
+
+Switch.js
+import React from 'react';
+
+const Switch = ({ isOn, handleToggle }) => {
+  return (
+    <>
+      <input
+        checked={isOn}
+        onChange={handleToggle}
+        className="react-switch-checkbox"
+        id={`react-switch-new`}
+        type="checkbox"
+      />
+      <label
+        className="react-switch-label"
+        htmlFor={`react-switch-new`}
+      >
+        <span className={`react-switch-button`} />
+      </label>
+    </>
+  );
+};
+
+export default Switch;
+The code above makes four new additions:
+
+isOn is passed in through props
+handleToggle function is passed in through props
+checked attribute is added, and uses the value from the isOn prop
+onChange event handler is added and uses the handleToggle function prop
+
+
+Finally, open up the parent component (I’m using App.js) and modify the React Switch component declaration to match the following code:
+
+App.js
+import React, { useState } from 'react';
+import './App.css';
+import Switch from "./Switch";
+
+function App() {
+  const [value, setValue] = useState(false);
+  return (
+    <div className="app">
+      <Switch
+        isOn={value}
+        handleToggle={() => setValue(!value)}
+      />
+    </div>
+  );
+}
+
+export default App;
+Notice how this parent component now has state from using the useState Hook. That means that this component is going to pass down the state value into our React switch component’s isOn prop.
+
+We also pass down the state setter function, setValue, into the handleToggle prop. As a result, when the Switch component is toggled and changes its value, it will call what is passed to the handleToggle prop.
+
+Changing the Background Color onChange
+If you saved the React switch component and toggled it in the UI, you’d see that there is no visual difference…
+
+…yet.
+
+We only have to make one simple change to the React switch component in order to change the background color of the switch. That’s because we have access to the switch’s state through the isOn prop.
+
+
+
+Modify the label HTML element inside Switch.js to the following code:
+
+Switch.js
+...
+
+<label
+  style={{ background: isOn && '#06D6A0' }}
+  className="react-switch-label"
+  htmlFor={`react-switch-new`}
+>
+
+...
+Save the component, jump on over to your browser and you’ll see a fully working Switch component that lights up green when it’s turned on!
+
+And there we have it! We’ve made a complete React Switch component that toggles, changes value, and lights up green when it’s on.
+
+Read on if you want to learn how to expand our Switch’s functionality by specifying the on color.
+
+Specifying the Switch Color
+It’s good practice to build flexible React components so that they may be used in a variety of scenarios. For example, we might want to use a switch component:
+
+In a sign-in form, as a way to tell the site to remember your user credentials
+On a settings page
+In a modal dialog for deleting a user account
+Those are three examples, however, there are countless implementations for a switch.
+
+Here’s the thing. Right now, our React Switch component only lights up green. What if we wanted it to light up red when we use it in that modal for deleting a user account?
+
+Let’s add another prop to our switch component, called onColor:
+
+Switch.js
+import React from 'react';
+
+const Switch = ({ isOn, handleToggle, onColor }) => {
+  return (
+    <>
+      <input
+        checked={isOn}
+        onChange={handleToggle}
+        className="react-switch-checkbox"
+        id={`react-switch-new`}
+        type="checkbox"
+      />
+      <label
+        style={{ background: isOn && onColor }}
+        className="react-switch-label"
+        htmlFor={`react-switch-new`}
+      >
+        <span className={`react-switch-button`} />
+      </label>
+    </>
+  );
+};
+
+export default Switch;
+onColor will be a string value representing a hex color. Save that. Jump over to the parent component and add the new onColor prop to the Switch declaration:
+
+App.js
+import React, { useState } from 'react';
+import './App.css';
+import Switch from "./Switch";
+
+function App() {
+  const [value, setValue] = useState(false);
+  return (
+    <div className="app">
+      <Switch
+        isOn={value}
+        onColor="#EF476F"
+        handleToggle={() => setValue(!value)}
+      />
+    </div>
+  );
+}
+
+export default App;
+Now we’ve got a flexible, modular React switch component!
+
+Thanks for reading, and I really hope you enjoyed this tutorial. I write all of the tutorials on here, and I’m going to continue adding more and more tutorials each month.
+
+If there’s a particular tutorial that you want to see, I want to hear from you! Contact me through the about page, even if you aren’t suggesting a tutorial — I’d love to hear from you just the same!
+
+Related Posts:
+How to build a Pagination Component with React-Query (in 4…
+How To Build React Dropdown Menu (Tutorial with Code…
+Where Does Nextjs Put Build Folder?
+Calling a React Component on Button Click
+What Is a React Component?
+How To Make Users Focus on a Component in React?
+
+👋 Hey, I'm James Dietrich
+I work full-time at an AI-based startup out of San Francisco, CA. My true passion is to help others. My tutorials help 150,000+ developers learn React and JavaScript every month. Follow on Twitter, or Github.
+
+
+🏆 Most Read
+1
+Build a React Switch Toggle Component
+2
+Upload a File from a React Component
+3
+How React Reignited My Love for Web Development
+4
+How to Use the setState Callback in React
+5
+Simplifying React State and the useState Hook
+
+
+💬 Leave a comment
+Your email address will not be published. Required fields are marked *
+
+Email address
+Your email address
+We will never share your email with anyone else.
+Name
+Your name
+Comments
+Chuck Belcher
+July 22, 2019 at 9:45 pm
+Very cool tutorial. I am working on trying to add two toggles to a page and cycle them independently… Not there yet but very nice presentation and writing style.
+
+Reply
+James King
+July 23, 2019 at 1:15 pm
+Thanks, Chuck. You can use my sample code to do that — you’d just need to give them separate id values.
+
+Reply
+J Khalaf
+July 22, 2019 at 11:08 pm
+This was great and easy to follow, thank you.
+
+Reply
+Chris Christensen
+September 19, 2019 at 5:40 pm
+Fantastic tutorial! Thanks so much!
+
+Reply
+Markus Johnson
+September 24, 2019 at 3:35 pm
+Don’t you need ‘backgroundColor’ in the style tag rather than just the color?
+
+Reply
+James King
+September 26, 2019 at 5:12 pm
+We could use either background or backgroundColor to change the color of an element, but background works fine.
+
+Reply
+Pavithra
+September 27, 2019 at 4:25 pm
+i am completely new to react and i get an error useState is not defined when i tried to follow your code. Any help would be useful ?
+
+Thanks
+
+Reply
+James King
+September 30, 2019 at 10:29 pm
+Hey Pavithra, it’s likely because you haven’t imported the useState hook into your component. At the top of the component, where you’re importing React, add the following: import React, { useState } from ‘react;
+
+Reply
+rb
+October 10, 2019 at 8:32 am
+Thank you, i would have loved if you go ahead and make onChange also work. but thanks once again this really helped
+
+Reply
+Chris
+November 8, 2019 at 3:20 am
+This is great, I noticed that this doesn’t support multiple toggles on the same page. I think this might be related to the htmlFor=
+
+I’d like to hear your view on how best to solve this.
+
+Reply
+James King
+November 10, 2019 at 4:55 pm
+It does, you just need to give each Toggle a different Id.
+
+Reply
+Powie
+January 4, 2020 at 7:04 am
+Nice Project James!
+
+I just have a little trouble regarding our little project that we are currently working on. I was hoping you could help me with this. I have to indicate a “On” and “Off” label whenever I toggle the switch and change the color of the moving part of the switch (not just white) thereafter. Can I pass a prop indicating such?
+
+really appreciate if you could extend some help. 🙂
+
+Reply
+Damien
+January 7, 2020 at 9:16 am
+Could you give an example of this code, using two switches without making too much effort? Great tutorial by the way, man, keep up!
+
+Reply
+Sergey Bolotnikov
+November 9, 2020 at 4:49 pm
+Thank you for your help
+
+Reply
+Guymax
+November 24, 2020 at 9:19 am
+Thank you very much for this tutorial, this component is very useful !
+But I have an issue : I can’t manage 2 different switches to work on the same page, the second one update only the first one
+
+Reply
+Appgify
+January 9, 2021 at 4:24 pm
+Very nice tutorial and I was able to get it working. Only one css issue I was not able to figure out and any help would be greatly appreciated. When the switch is in Off mode you can turn it on from anywhere inside swich but when switch is in On mode you can only turn off from the top half of the switch. The pointer cursor also displays only on the top half of the switch.
+
+Reply
+onah
+February 24, 2021 at 10:37 am
+That was awesome tutorial.
+will i create a separate files on the vs. like the way you do.
+or all will be implemented in one file (app.js)
+i am new here.
+its my first time using REACT.
+coz i am hoping on creating my PORTFOLIO with react.
+
+Reply
+Ryan
+May 27, 2021 at 5:16 pm
+Better than `style={{ background: isOn && onColor }}` is to just use css like
+“`
+.react-switch-checkbox:checked + .react-switch-label {
+background: #06D6A0;
+}
+“`
+
+Reply
+Upmostly brings you original React and JavaScript tutorials each week. Level up your React skills.
+About Write For Us Privacy RSS Twitter Github
+Copyright © 2018 – 2022 Upmostly
+Exclusive Member of Mediavine Home
+
+
