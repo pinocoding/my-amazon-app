@@ -1,0 +1,20 @@
+.author__section {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.author__left {
+  display:flex;
+}
+.author__img{
+  width:150px;
+  height: 150px;
+overflow: hidden;
+border-radius: 50%;
+}
+.author__img img {
+  width: 100%;
+  height: 100%;
+
+}
