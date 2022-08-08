@@ -1,0 +1,20 @@
+.product-detail {
+width: 100%;
+padding : 0 2px;
+}
+.main-img {
+  width: 100%;
+}
+.middle  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+.middle-img{
+  width: 100%;
+}
+
+.middle-img > img {
+  width: 100%;
+}

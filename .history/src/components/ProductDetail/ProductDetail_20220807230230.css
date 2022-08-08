@@ -1,0 +1,26 @@
+.product-detail {
+width: 100%;
+padding : 0 2px;
+}
+.main {
+  width: 100%;
+}
+.main  > img {
+  width: 100%;
+}
+
+.middle  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+
+}
+.middle-column img {
+  width: 100%$=;
+}
+
+
+
+.Secondary > img {
+  width: 100%;
+}

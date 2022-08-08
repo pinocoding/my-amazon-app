@@ -1,0 +1,14 @@
+.product-detail {
+width: 100%;
+padding : 0 2px;
+}
+.main-img {
+  width: 100%;
+}
+.middle  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+..middle
