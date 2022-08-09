@@ -80,7 +80,7 @@ function Home() {
         <div className="home__cardlayout">
           <Card1
             link1="computersaccessories"
-            title={t("Computers & Accessories")}
+            title={t("Computers")}
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN4Bb4sifgVbSUA47Ia2jsULJRguTJidEoAQ&usqp=CAU"
           />
           <Card1
@@ -101,7 +101,7 @@ function Home() {
         </div>
         <div className="carouseltest">
           <h4>{t("Top Sellers Of The Day")}</h4>
-          <TopSellerDressesTest />
+          {/* <TopSellerDressesTest /> */}
         </div>
         <div className="carousel">
           <h4> {t("Top Seller Videos Games")}</h4>

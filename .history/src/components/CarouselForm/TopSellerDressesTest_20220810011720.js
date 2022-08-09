@@ -68,8 +68,6 @@ function TopSellerDressesTest() {
   };
   const carouselStyle = {
     minHeight: "120px",
-    maxWidth: "100%",
-    padding: "10px",
   };
   return (
     <div className="container">

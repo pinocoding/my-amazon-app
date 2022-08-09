@@ -99,18 +99,18 @@ function Home() {
             image="https://i.pinimg.com/736x/40/5d/cb/405dcb1780625a67da2f5ddc44146618.jpg"
           />
         </div>
-        <div className="carouseltest">
+        {/* <div className="carouseltest">
           <h4>{t("Top Sellers Of The Day")}</h4>
           <TopSellerDressesTest />
-        </div>
-        <div className="carousel">
+        </div> */}
+        {/* <div className="carousel">
           <h4> {t("Top Seller Videos Games")}</h4>
           <TopVideosGames />
-        </div>
-        <div className="carousel">
+        </div> */}
+        {/* <div className="carousel">
           <h4> {t("Top Sexy Dresses")}</h4>
           <TopSellerDresses />
-        </div>
+        </div> */}
 
         <div className="home__cardlayout">
           <Card1

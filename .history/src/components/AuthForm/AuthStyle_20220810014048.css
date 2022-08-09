@@ -107,7 +107,7 @@ background: #f0c14b;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 .login__ect > li >a {
   text-decoration: none;
