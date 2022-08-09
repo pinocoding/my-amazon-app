@@ -37,7 +37,7 @@
 }
 .login__button > button{
 
-margin : 20px 0;
+
   width: 100%;
   padding:10px;
 border: none;
@@ -47,7 +47,7 @@ border: none;
 }
 .login__text {
   font-size: 12px;
-margin-top: 10px;
+
 }
 .login__help {
 
