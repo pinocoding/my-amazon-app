@@ -1,13 +1,13 @@
 .subtotal {
-
-
+  margin-top: 2%;
+  margin-left: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 20px;
   background-color: #f3f3f3;
-
+  border: 1px solid #dddd;
   border-radius: 3px;
 
 

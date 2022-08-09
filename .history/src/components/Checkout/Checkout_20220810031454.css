@@ -24,10 +24,13 @@ padding: 0;
 }
 .checkout__container .checkout__left  {
   width: 100%;
-
+  margin-bottom: 30%;
 }
 .checkout__container .checkout__right {
-width: 100%;
+  position: fixed;
+  top: 84%;
+  left: 0;
+  width: 100%;
 }
    }
 

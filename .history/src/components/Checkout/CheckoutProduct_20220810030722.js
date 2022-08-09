@@ -8,7 +8,7 @@ import "./CheckoutProduct.css";
 
 function CheckoutProduct() {
   const context = useContext(DataContext);
-  const isDark = context.isDark;
+  const isDark = context.IsDark;
   const userCartProduct = context.userCartProduct;
 
   const removeCart = context.removeCart;

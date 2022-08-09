@@ -1,13 +1,12 @@
 .subtotal {
-
-
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 20px;
   background-color: #f3f3f3;
-
+  border: 1px solid #dddd;
   border-radius: 3px;
 
 
@@ -29,7 +28,7 @@
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  /* border-color: #a88734 #9c7e31 #846a29; */
   /* color: #111; */
   cursor: pointer;
 }
@@ -46,7 +45,6 @@
 .subtotal-dark {
   background-color: #303134;
   color: #D6D6D7;
-  border-color : none;
 }
 .subtotal-light {
   background-color: white;

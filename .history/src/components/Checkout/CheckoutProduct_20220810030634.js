@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DataContext } from "../DataLayer/Datalayer";
-
+import CurrencyFormat from "react-currency-format";
 import Indecbutton from "../Indecbutton/Indecbutton";
 
 import "./CheckoutProduct.css";
 
 function CheckoutProduct() {
   const context = useContext(DataContext);
-  const isDark = context.isDark;
+  const isDark = context.IsDark;
   const userCartProduct = context.userCartProduct;
 
   const removeCart = context.removeCart;

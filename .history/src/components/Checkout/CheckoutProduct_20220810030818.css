@@ -43,7 +43,7 @@
 }
 
 .checkoutProduct__price {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -59,12 +59,8 @@
 }
 .checkoutProduct-dark {
   background-color: #303134;
-  color: #D6D6D7;
 }
-.checkoutProduct-light {
-  background-color: white;
-  color: black;
-}
+
 
 @media only screen and (max-width: 768px) {
   .checkoutProduct {

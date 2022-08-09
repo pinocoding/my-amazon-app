@@ -13,7 +13,7 @@ function Subtotal() {
   const totalQty = context.totalQty;
 
   return (
-    <div className={`subtotal ${isDark ? "subtotal-dark" : "subtotal-light"}`}>
+    <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => (
           <>

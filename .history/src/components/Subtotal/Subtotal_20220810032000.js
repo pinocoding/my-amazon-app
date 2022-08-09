@@ -6,14 +6,17 @@ import { DataContext } from "../DataLayer/Datalayer";
 
 function Subtotal() {
   const context = useContext(DataContext);
-  const isDark = context.isDark;
   const currentUser = context.currentUser;
   const userCartProduct = context.currentUser;
   const totalPrice = context.totalPrice;
   const totalQty = context.totalQty;
 
   return (
-    <div className={`subtotal ${isDark ? "subtotal-dark" : "subtotal-light"}`}>
+    <div
+      className={`checkoutProduct ${
+        isDark ? "checkoutProduct-dark" : "checkoutProduct-light"
+      }`}
+    >
       <CurrencyFormat
         renderText={(value) => (
           <>

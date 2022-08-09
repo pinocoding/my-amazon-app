@@ -1,13 +1,12 @@
 .subtotal {
-
-
+  margin-top
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 20px;
   background-color: #f3f3f3;
-
+  border: 1px solid #dddd;
   border-radius: 3px;
 
 
@@ -43,15 +42,7 @@
 
   font-size: 15px;
 }
-.subtotal-dark {
-  background-color: #303134;
-  color: #D6D6D7;
-  border-color : none;
-}
-.subtotal-light {
-  background-color: white;
-  color: black;
-}
+
 @media only screen and (max-width: 768px) {
 
 
