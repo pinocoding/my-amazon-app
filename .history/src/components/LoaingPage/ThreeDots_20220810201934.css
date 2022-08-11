@@ -1,0 +1,78 @@
+.content {
+  align-items: center;
+  background: #214C5E;
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 4rem 20px;
+}
+.loading {
+  display: flex;
+  justify-content: space-between;
+  max-width: 72px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dot {
+  animation: loading 1s cubic-bezier(.55,-0.77,.42,1.79) 0s infinite normal both running;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+
+  $n: 3;
+  @for $x from 2 through $n {
+    &:nth-child(#{$x}) {
+      animation-name: loading-#{$x};
+    }
+  }
+
+}
+
+@keyframes loading {
+  0%   {
+    transform: translateY(0);
+  }
+  4%   {
+    transform: translateY($y2);
+  }
+  25% {
+    transform: translateY($y);
+  }
+  50%  {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-2 {
+  25%   {
+    transform: translateY(0);
+  }
+  29%   {
+    transform: translateY($y2);
+  }
+  50%  {
+    transform: translateY($y);
+  }
+  75% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-3 {
+  50%  {
+    transform: translateY(0);
+  }
+  54%   {
+    transform: translateY($y2);
+  }
+  75% {
+    transform: translateY($y);
+  }
+  100%  {
+    transform: translateY(0);
+  }
+}

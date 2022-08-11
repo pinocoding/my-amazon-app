@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "react",
+      "options": {
+        "cwd": "${workspaceFolder}/YOUR-PROJECT-PATH-HERE-IF-NEEDED"
+      },
+      "script": "start",
+      "type": "npm"
+    }
+  ]
+}
