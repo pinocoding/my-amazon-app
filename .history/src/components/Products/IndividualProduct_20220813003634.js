@@ -5,9 +5,9 @@ import { Link, useNavigate } from "react-router-dom";
 import StarRateIcon from "@mui/icons-material/StarRate";
 function IndividualProduct({ item, myKey }) {
   const navigate = useNavigate();
-  const individualPage = () => {
-    navigate("/IndividualPage");
-  };
+  const individualPage  = () {
+    navigate('/IndividualPage')
+  }
   const [{ itembox }, dispatch] = useStateValue();
 
   const handleClick = () => {
@@ -31,9 +31,8 @@ function IndividualProduct({ item, myKey }) {
   const isDark = context.isDark;
 
   return (
-    <div style={{ textDecoration: "none" }} onClick={individualPage}>
+    <Link key={myKey} style={{ textDecoration: "none" }} to="/IndividualPage">
       <div
-        key={myKey}
         className={`card  ${isDark ? "carousel-dark" : "carousel-light"}`}
         onClick={handleClick}
       >
@@ -56,7 +55,7 @@ function IndividualProduct({ item, myKey }) {
         </p>
         <p className="card__description">{item.description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

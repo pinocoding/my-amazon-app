@@ -31,7 +31,7 @@ function IndividualProduct({ item, myKey }) {
   const isDark = context.isDark;
 
   return (
-    <div style={{ textDecoration: "none" }} onClick={individualPage}>
+    <div style={{ textDecoration: "none" }} to="/IndividualPage">
       <div
         key={myKey}
         className={`card  ${isDark ? "carousel-dark" : "carousel-light"}`}

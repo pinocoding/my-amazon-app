@@ -124,7 +124,7 @@ function IndividualPage() {
                       ))}
                   </div>
                   <div className="product__info">
-                    <div className="product__description">
+                    <p className="product__description">
                       <h3>
                         {item.author ? "About this Book" : "About this item"}
                       </h3>
@@ -132,7 +132,7 @@ function IndividualPage() {
                       <ShowMoreLessBtn limit={500}>
                         {item.description}
                       </ShowMoreLessBtn>
-                    </div>
+                    </p>
                     {item.author && (
                       <div>
                         <div
