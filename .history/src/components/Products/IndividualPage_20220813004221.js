@@ -116,15 +116,15 @@ function IndividualPage() {
                 )}
 
                 <div className="product__description">
-                  <div className="product__rating">
+                  <p className="product__rating">
                     {Array(item.rating)
                       .fill()
                       .map((value, index) => (
                         <StarRateIcon key={index} />
                       ))}
-                  </div>
+                  </p>
                   <div className="product__info">
-                    <div className="product__description">
+                    <p className="product__description">
                       <h3>
                         {item.author ? "About this Book" : "About this item"}
                       </h3>
@@ -132,7 +132,7 @@ function IndividualPage() {
                       <ShowMoreLessBtn limit={500}>
                         {item.description}
                       </ShowMoreLessBtn>
-                    </div>
+                    </p>
                     {item.author && (
                       <div>
                         <div

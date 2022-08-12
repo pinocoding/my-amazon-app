@@ -31,9 +31,9 @@ function IndividualProduct({ item, myKey }) {
   const isDark = context.isDark;
 
   return (
-    <div style={{ textDecoration: "none" }} onClick={individualPage}>
+    <Link  style={{ textDecoration: "none" }} to="/IndividualPage">
       <div
-        key={myKey}
+      key={myKey}
         className={`card  ${isDark ? "carousel-dark" : "carousel-light"}`}
         onClick={handleClick}
       >
@@ -56,7 +56,7 @@ function IndividualProduct({ item, myKey }) {
         </p>
         <p className="card__description">{item.description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

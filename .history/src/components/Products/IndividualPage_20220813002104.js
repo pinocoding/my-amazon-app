@@ -62,7 +62,7 @@ function IndividualPage() {
                       src={item.image}
                       zoomSrc={item.image}
                       zoomScale={1.3}
-                      zoomPreload={true}
+                      zoomPreload="true"
                       zoomType="hover"
                     />
                   </div>
@@ -110,21 +110,21 @@ function IndividualPage() {
                 <h1>{item.title}</h1>
 
                 {item.author && (
-                  <div className="individualright__columnAuthor">
+                  <p className="individualright__columnAuthor">
                     by {item.author.name} (Author)
-                  </div>
+                  </p>
                 )}
 
                 <div className="product__description">
-                  <div className="product__rating">
+                  <p className="product__rating">
                     {Array(item.rating)
                       .fill()
                       .map((value, index) => (
                         <StarRateIcon key={index} />
                       ))}
-                  </div>
+                  </p>
                   <div className="product__info">
-                    <div className="product__description">
+                    <p className="product__description">
                       <h3>
                         {item.author ? "About this Book" : "About this item"}
                       </h3>
@@ -132,7 +132,7 @@ function IndividualPage() {
                       <ShowMoreLessBtn limit={500}>
                         {item.description}
                       </ShowMoreLessBtn>
-                    </div>
+                    </p>
                     {item.author && (
                       <div>
                         <div
