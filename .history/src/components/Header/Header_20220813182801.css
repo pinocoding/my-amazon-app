@@ -422,8 +422,6 @@ color: black
   display: none;
 }
 .header__navDropDown-dark  .header__navDropDownActiveList {
-  background-color: #303134;
-  color: white;
   min-height: 100vh;
 }
 }

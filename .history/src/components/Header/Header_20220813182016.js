@@ -331,9 +331,7 @@ function Header() {
           >
             <div className="header__navDropDownActiveUser">
               {currentUser ? (
-                <span>
-                  <Link to="/updateProfile">Hello {currentUserName}</Link>
-                </span>
+                <span><Link>Hello {currentUserName}</Link></span>
               ) : (
                 <span>{t("Sign-In")}</span>
               )}

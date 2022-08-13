@@ -295,10 +295,7 @@ border: none;
   text-decoration: none;
 color: black
 }
-.header__navDropDown-light  a {
-  color: black
 
-}
 
 @media only screen and (max-width: 768px)   {
 .header {
@@ -420,11 +417,6 @@ color: black
 }
 .toggle-darkmode {
   display: none;
-}
-.header__navDropDown-dark  .header__navDropDownActiveList {
-  background-color: #303134;
-  color: white;
-  min-height: 100vh;
 }
 }
 

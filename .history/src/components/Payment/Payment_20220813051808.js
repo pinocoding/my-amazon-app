@@ -8,7 +8,7 @@ function Payment() {
   const context = useContext(DataContext);
   const totalQty = context.totalQty;
   const isDark = context.isDark;
-  const currentUserEmail = context.currentUser.email;
+  const currentUserEmail = context.currentUser.Email;
   const currentUserName = context.currentUser.displayName;
   const userCartProduct = context.userCartProduct;
 
