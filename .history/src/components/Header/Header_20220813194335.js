@@ -82,7 +82,6 @@ function Header() {
   };
   const styleLi = {
     fontSize: "15px",
-    paddingLeft: "20px",
   };
 
   return (
@@ -393,7 +392,7 @@ function Header() {
                       </Grid>
                     </li>
 
-                    <li style={styleLi}>Language </li>
+                    <li>Language style={styleLi}</li>
                   </ul>
                 )}
               </ul>

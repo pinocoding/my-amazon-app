@@ -80,10 +80,6 @@ function Header() {
   const handlemouseout = () => {
     setIsActive(false);
   };
-  const styleLi = {
-    fontSize: "15px",
-    paddingLeft: "20px",
-  };
 
   return (
     <div>
@@ -359,9 +355,9 @@ function Header() {
                 </li>
                 {subActive && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
+                    <li style={{ fontSize: "14px" }}>text</li>
+
+                    <li></li>
                   </ul>
                 )}
                 <li onClick={() => setActive((oldState) => !oldState)}>
@@ -376,7 +372,7 @@ function Header() {
                 </li>
                 {active && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>
+                    <li>
                       <Grid
                         container
                         direction="row"
@@ -393,7 +389,7 @@ function Header() {
                       </Grid>
                     </li>
 
-                    <li style={styleLi}>Language </li>
+                    <li>Language</li>
                   </ul>
                 )}
               </ul>

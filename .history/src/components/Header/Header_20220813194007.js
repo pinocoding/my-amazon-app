@@ -80,10 +80,6 @@ function Header() {
   const handlemouseout = () => {
     setIsActive(false);
   };
-  const styleLi = {
-    fontSize: "15px",
-    paddingLeft: "20px",
-  };
 
   return (
     <div>
@@ -350,7 +346,7 @@ function Header() {
             <div className="header__navDropDownActiveList">
               <ul>
                 <li onClick={() => setSubActive((oldState) => !oldState)}>
-                  Trending
+                  Trending{" "}
                   {subActive ? (
                     <KeyboardArrowDownIcon />
                   ) : (
@@ -359,9 +355,21 @@ function Header() {
                 </li>
                 {subActive && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>
+                      <Grid
+                        container
+                        direction="row"
+                        alignItems="center"
+                        justifyContent="space-between"
+                      >
+                        <Grid item>text</Grid>
+                        <Grid item>text</Grid>
+                      </Grid>
+                    </li>
                   </ul>
                 )}
                 <li onClick={() => setActive((oldState) => !oldState)}>
@@ -376,7 +384,7 @@ function Header() {
                 </li>
                 {active && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>
+                    <li>
                       <Grid
                         container
                         direction="row"
@@ -393,7 +401,7 @@ function Header() {
                       </Grid>
                     </li>
 
-                    <li style={styleLi}>Language </li>
+                    <li>Language</li>
                   </ul>
                 )}
               </ul>

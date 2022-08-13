@@ -1,9 +1,6 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-
 import i18next from "i18next";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -24,7 +21,6 @@ function Header() {
   const ref = useRef();
   const [isActive, setIsActive] = useState(false);
   const [active, setActive] = useState(false);
-  const [subActive, setSubActive] = useState(false);
   const context = useContext(DataContext);
   const checked = context.checked;
   const isDark = context.isDark;
@@ -79,10 +75,6 @@ function Header() {
 
   const handlemouseout = () => {
     setIsActive(false);
-  };
-  const styleLi = {
-    fontSize: "15px",
-    paddingLeft: "20px",
   };
 
   return (
@@ -349,34 +341,15 @@ function Header() {
             </div>
             <div className="header__navDropDownActiveList">
               <ul>
-                <li onClick={() => setSubActive((oldState) => !oldState)}>
-                  Trending
-                  {subActive ? (
-                    <KeyboardArrowDownIcon />
-                  ) : (
-                    <KeyboardArrowLeftIcon />
-                  )}
-                </li>
-                {subActive && (
-                  <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
-                    <li style={styleLi}>text</li>
-                  </ul>
-                )}
                 <li onClick={() => setActive((oldState) => !oldState)}>
-                  <p>
-                    <SettingsIcon />
-                  </p>
-                  {active ? (
-                    <KeyboardArrowDownIcon />
-                  ) : (
-                    <KeyboardArrowLeftIcon />
-                  )}
+                  Trending <KeyboardArrowDownIcon />
+                </li>
+                <li onClick={() => setActive((oldState) => !oldState)}>
+                  Setting <SettingsIcon />
                 </li>
                 {active && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>
+                    <li>
                       <Grid
                         container
                         direction="row"
@@ -393,7 +366,7 @@ function Header() {
                       </Grid>
                     </li>
 
-                    <li style={styleLi}>Language </li>
+                    <li>Language</li>
                   </ul>
                 )}
               </ul>

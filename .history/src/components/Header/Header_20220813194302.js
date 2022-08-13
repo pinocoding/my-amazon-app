@@ -82,7 +82,6 @@ function Header() {
   };
   const styleLi = {
     fontSize: "15px",
-    paddingLeft: "20px",
   };
 
   return (
@@ -376,14 +375,16 @@ function Header() {
                 </li>
                 {active && (
                   <ul className="header__navDropDownActiveListTwo">
-                    <li style={styleLi}>
+                    <li>
                       <Grid
                         container
                         direction="row"
                         alignItems="center"
                         justifyContent="space-between"
                       >
-                        <Grid item>Dark theme</Grid>
+                        <Grid item style={styleLi}>
+                          Dark theme
+                        </Grid>
                         <Grid item>
                           <MaterialUISwitch
                             checked={!!checked}
@@ -393,7 +394,7 @@ function Header() {
                       </Grid>
                     </li>
 
-                    <li style={styleLi}>Language </li>
+                    <li>Language</li>
                   </ul>
                 )}
               </ul>

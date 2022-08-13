@@ -194,10 +194,6 @@ background-color: #303134;
 .login-light {
   background-color: white;
 }
-.login-light   .signin__password h4 a {
-  color: black;
- }
-
 .login-dark   .signin__password h4 a {
   color:#e7e7e7;
  }

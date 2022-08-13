@@ -82,7 +82,6 @@ function Header() {
   };
   const styleLi = {
     fontSize: "15px",
-    paddingLeft: "20px",
   };
 
   return (
