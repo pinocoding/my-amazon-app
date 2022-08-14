@@ -1,0 +1,27 @@
+.AddToCartColumnList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #black;
+}
+.AddToCartColumnList img {
+width: 100%;
+}
+.AddToCartColumnListTop {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+.incdec {
+  margin:  10px auto;
+}
+
+.AddToCartColumnList__total {
+  font-size: 30px;
+}
+.AddToCartColumnListTopPrice {
+ text-align: center;
+}

@@ -1,0 +1,10 @@
+.AddToCartColumnList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #FFFFFF;
+}
+.AddToCartColumnList img {
+width: 100%;
+}

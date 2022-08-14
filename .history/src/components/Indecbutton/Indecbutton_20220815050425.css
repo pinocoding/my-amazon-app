@@ -1,0 +1,26 @@
+.checkoutProduct__incdec {
+  margin-top: 40px;
+  width: 100px;
+  justify-content: center;
+}
+.AddToCartColumnListTop {
+  display: flex;
+  justify-items: center;
+}
+.checkoutProduct__incdec  span {
+margin: 0 10px;
+}
+.checkoutProduct__incdecbtn {
+  padding:2px 7px;
+
+  border:none;
+  background-color: #f0c14b;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+.checkoutProduct__incdecbtn:hover {
+  color:white
+
+}

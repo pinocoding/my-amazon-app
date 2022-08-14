@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+   background-color: rgb(234,237,237);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+.App {
+  position: relative;
+}
+.app-dark {
+  background-color: #202124;
+  color: #D6D6D7;
+}
+.app-light {
+  background-color: rgb(234,237,237);
+  color: black
+}
+.toggle-darkmode {
+  position: fixed;
+  top:95%;
+  left:5%;
+  z-index: 99999;
+}
+.addtocart__column {
+  position: fix;
+  top:1.5%;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background-color: transparent;
+}

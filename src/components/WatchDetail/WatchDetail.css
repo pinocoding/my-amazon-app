@@ -1,0 +1,37 @@
+.product-detail {
+  width: 100%;
+  padding : 0 5px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main  > img {
+    width: 100%;
+  }
+
+  .middle  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+
+
+  }
+  .middle-column img {
+    width: 100%;
+  }
+
+  .middle-column  p {
+    margin-top: 10px;
+  }
+
+
+  .Secondary > img {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px)  {
+
+    .middle {
+      grid-template-columns: auto ;
+    }
+  }
