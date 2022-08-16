@@ -1,0 +1,11 @@
+.header__searchResult {
+  position: absolute;
+  top:30px;
+  left:80px;
+  width: 94%;
+  background-color: white;
+}
+
+.header__searchResult li {
+  text-decoration: none;
+}
