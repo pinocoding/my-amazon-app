@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+border-bottom: 1px solid white;
+
 }
 .AddToCartColumnList-dark {
   background-color: #303134;
