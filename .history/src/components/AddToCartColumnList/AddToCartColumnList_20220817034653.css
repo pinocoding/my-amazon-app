@@ -1,0 +1,37 @@
+.AddToCartColumnList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+}
+.AddToCartColumnList-dark {
+  background-color: #202124;
+  color: #D6D6D7;
+}
+.AddToCartColumnList-light {
+  background-color: #202124;
+  color: black;
+}
+.AddToCartColumnList img {
+width: 100%;
+}
+.AddToCartColumnListTop {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+
+}
+.incdec {
+  margin:  10px auto;
+}
+
+.AddToCartColumnList__total {
+  font-size: 30px;
+}
+.AddToCartColumnListTopPrice {
+ text-align: center;
+}
