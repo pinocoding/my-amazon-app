@@ -22,7 +22,7 @@ function Indecbutton({ item }) {
       >
         -
       </button>
-      <span style={{ transform: "scale(1.2)" }}>{item.qty}</span>
+      <span style={{ transform: "scale(1.1)" }}>{item.qty}</span>
       <button
         style={{ transform: "scale(0.8)" }}
         className="checkoutProduct__incdecbtn"

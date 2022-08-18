@@ -5,9 +5,10 @@ import { useTranslation } from "react-i18next";
 import { DataContext } from "../DataLayer/Datalayer";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import InnerImageZoom from "react-inner-image-zoom";
+
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import "./Product.css";
-import Indecbutton from "../Indecbutton/Indecbutton";
+
 import Author from "../Author/Author";
 import ShowMoreLessBtn from "../ShowMoreLessBtn/ShowMoreLessBtn";
 import AlSoLike from "../AlSoLike/AlSoLike";
@@ -245,10 +246,9 @@ function IndividualPage() {
                 </div>
 
                 <div className="product__price">
-                  {/* <Indecbutton item={item} /> */}
-                  <div>
+                  {/* <div>
                     Price&nbsp;:&nbsp;<span>{item.price} $</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="product__buy">

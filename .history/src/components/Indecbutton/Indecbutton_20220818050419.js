@@ -16,15 +16,14 @@ function Indecbutton({ item }) {
   return (
     <div className="incdec">
       <button
-        style={{ transform: "scale(0.8)" }}
         className="checkoutProduct__incdecbtn"
         onClick={() => handleDecreaseQty(item)}
       >
         -
       </button>
-      <span style={{ transform: "scale(1.2)" }}>{item.qty}</span>
+      <span>{item.qty}</span>
       <button
-        style={{ transform: "scale(0.8)" }}
+        style={{ transform: "scale(1)" }}
         className="checkoutProduct__incdecbtn"
         onClick={() => handleIncreaseQty(item)}
       >

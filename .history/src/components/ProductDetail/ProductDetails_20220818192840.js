@@ -5,13 +5,12 @@ import ProductDes from "../CarouselForm/ProductDes";
 import "./ProductDetail.css";
 
 function ProductDetails({ img }) {
-  const { t } = useTranslation(["common"]);
   return (
     <div className="product-detail">
       <ProductDes img={img} />
       <div>
         <br />
-        <h3>{t("Product Description")}</h3>
+        <h3>Product Description</h3>
         <br />
         <div className="main">
           <img className="main-img" src={img} alt="" />

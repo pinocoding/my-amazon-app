@@ -245,10 +245,10 @@ function IndividualPage() {
                 </div>
 
                 <div className="product__price">
-                  {/* <Indecbutton item={item} /> */}
-                  <div>
+                  <Indecbutton />
+                  {/* <div>
                     Price&nbsp;:&nbsp;<span>{item.price} $</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="product__buy">
