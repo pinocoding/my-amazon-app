@@ -325,7 +325,7 @@ color: black
 .header__basketCount span {
   position: absolute;
   font-size: 19px;
-  top: 10px;
+  top: 11px;
   right: 11px;
 }
 .header__navResponsiveBottom {

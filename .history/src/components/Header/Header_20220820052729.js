@@ -120,10 +120,10 @@ function Header() {
             </span>
           </div>
         </div>
-        {/* <div className="header__searchOption">
+        <div className="header__searchOption">
           <span> {t("All")}</span>
           <ArrowDropDownIcon className="header__searchOptionIcon" />
-        </div> */}
+        </div>
 
         <SearchBar setTextActive={setTextActive} />
 

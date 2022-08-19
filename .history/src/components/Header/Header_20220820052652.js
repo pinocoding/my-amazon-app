@@ -120,8 +120,8 @@ function Header() {
             </span>
           </div>
         </div>
-        {/* <div className="header__searchOption">
-          <span> {t("All")}</span>
+        <div className="header__searchOption">
+          {/* <span> {t("All")}</span>
           <ArrowDropDownIcon className="header__searchOptionIcon" />
         </div> */}
 
