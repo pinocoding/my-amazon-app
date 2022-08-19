@@ -1,0 +1,73 @@
+.payment {
+  width: 100%;
+  min-height: 100vh;
+  margin: 57px 0 0 0;
+  background-color: white;
+
+}
+.payment__container > h1 {
+
+  text-align: center;
+
+}
+.payment h1 a {
+  text-decoration: none;
+}
+.payment__section {
+  display: flex;
+  padding:20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+.payment__title  {
+width: 20%;
+}
+.payment__items {
+width: 60%;
+}
+.payment-dark {
+  background-color: #202124;
+  color: #D6D6D7;
+
+}
+.payment-light {
+  background-color: rgb(234,237,237);
+  color: black;
+}
+.payment-dark h1 a  {
+  color: #D6D6D7;
+}
+.payment-light h1 a  {
+  color: black;
+}
+.payment__price {
+ position: absolute;
+ right: 5px
+}
+@media only screen and (max-width: 768px) {
+  .payment {
+
+    margin:0;
+
+}
+  .payment__section {
+    display: block;
+    margin: 0;
+    padding:0;
+}
+.payment__title h3 {
+  padding: 10px 0;
+}
+.payment__title {
+  width: 100%;
+}
+.payment__items {
+  width: 100%;
+}
+.payment__address {
+  margin-left: 15px;
+}
+.payment__title  h3{
+padding-left:5px ;
+}
+}

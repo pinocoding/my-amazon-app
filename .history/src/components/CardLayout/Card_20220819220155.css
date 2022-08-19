@@ -1,0 +1,191 @@
+
+.cardone{
+ display: flex;
+ flex-direction: column;
+ background-color: white;
+ box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+
+ justify-content: flex-end;
+ margin:10px;
+ width: 100%;
+ max-width: 100%;
+ max-height: 500px;
+
+ z-index: 1;
+ padding: 10px 30px;
+ text-align: left;
+}
+
+
+.cardone  .cardone__img {
+  height: 390px;
+  width: 100%;
+  object-fit: fill;
+  transition: transform .5s ease;
+
+}
+.cardone:hover  .cardone__img {
+
+  transform: scale(1.05);
+cursor: pointer;
+
+}
+.cardone__title{
+
+font-weight: 600;
+margin-top: 10px;
+}
+
+.cardone > a {
+font-size: 15px;
+color:cadetblue;
+margin-top: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+a:hover {
+text-decoration: underline;
+}
+/* card2 */
+.cardtwo{
+  background-color: white;
+  margin:10px;
+  width: 100%;
+
+  max-height: 500px;
+  min-height: 100px;
+  padding: 10px 10px;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+ }
+.cardtwo__title  {
+  padding : 0 15px;
+  font-weight: 600;
+  margin-top: 10px;
+
+  }
+
+
+.cardtwo__uibody  {
+  display: grid;
+
+  grid-template-columns: auto auto;
+
+  gap : 20px;
+  margin-top: 40px;
+}
+
+
+ .cardtwo__uibody__cell {
+width: 100%;
+text-align: center;
+}
+.cardtwo__uibody__cell > a {
+  display: inline-block;
+}
+.cardtwo__uibody__cell a > img {
+  object-fit:contain;
+
+  width: 100%;
+  height: 130px;
+}
+.cardtwo__uibody__cell > p {
+margin-top: 7px;
+  font-size: 13px;
+}
+.cardtwo > a {
+  font-size: 15px;
+  color:cadetblue;
+  text-decoration: none;
+
+  cursor: pointer;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+
+.cardthree{
+  background-color: transparent;
+ margin:10px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  min-height: 100px;
+  z-index: 1;
+
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  justify-content: center;
+
+ }
+.cardthree__infoup {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  margin-bottom: 30px;
+
+
+}
+.cardthree__infoup h3 {
+margin-top : 5px;
+margin-bottom: 30px
+}
+.cardthree__infoup button {
+  /* outline: none; */
+  border: none;
+padding: 8px 60px;
+font-size: 20px;
+border-radius:10px;
+margin-bottom: 30px;
+background-color:#f0c14b;
+}
+
+.carthree__infoimg > img  {
+  width: 80%;
+  min-height: 305px;
+  object-fit: fill;
+
+}
+.card-dark {
+  background-color: #303134;
+  color: #D6D6D7;
+}
+
+
+/* ------//------ */
+
+@media only screen and (max-width: 768px) {
+
+  .cardone {
+    max-height: 460px;
+
+  }
+
+  .cardtwo {
+    margin:10px 10px;
+    padding: 10px 10px;
+
+
+  }
+  .cardone .cardone__img {
+    height: 365px;
+
+
+
+}
+.cardone__title {
+
+margin-top: 10px;
+font-size: 15px;
+
+}
+.cardtwo__title {
+  font-size: 15px;
+}
+.cardtwo__uibody {
+
+  margin-top: 10px;
+}
+}
