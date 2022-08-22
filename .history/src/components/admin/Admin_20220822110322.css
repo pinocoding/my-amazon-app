@@ -1,0 +1,25 @@
+.admin {
+  width: 100%;
+
+
+}
+.admin__header {
+  width: 100%;
+display: flex;
+padding: 10px;
+text-align: center;
+  color : white;
+background-color: black;
+}
+.admin__header--logo {
+  width: 20%;
+  font-size: 30px;
+
+}
+
+.admin__header--infor {
+  width: 80%;
+  display:flex;
+  justify-content: space-between;
+}
+

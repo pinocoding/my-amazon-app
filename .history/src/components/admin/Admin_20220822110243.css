@@ -1,0 +1,23 @@
+.admin {
+  width: 100%;
+padding: 10px
+background-color: black;
+}
+.admin__header {
+  width: 100%;
+display: flex;
+
+  color : white;
+
+}
+.admin__header--logo {
+  width: 20%;
+
+}
+
+.admin__header--infor {
+  width: 80%;
+  display:flex;
+  justify-content: space-between;
+}
+

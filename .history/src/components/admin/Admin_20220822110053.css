@@ -1,0 +1,16 @@
+.admin {
+  width: 100%;
+}
+.admin__header {
+  width: 100%;
+display: flex;
+
+  color : white;
+  background-color: black;
+}
+.admin__header--logo {
+  width: 20%;
+
+}
+
+
