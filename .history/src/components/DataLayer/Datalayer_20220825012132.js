@@ -435,14 +435,8 @@ function DataProvider({ children }) {
     if (password !== rePassword) {
       return setErrorMsg("Passwords do not match");
     }
-    if (
-      email === "" ||
-      password === "" ||
-      data.Address === "" ||
-      data.Country === "" ||
-      data.Phonenumber === ""
-    ) {
-      return setErrorMsg("Please fulfill the form");
+    if (email ==="" || password ===""  || data.Address || data.Country="" || data.Phonenumber ===""  ) {
+
     }
     try {
       setPageLoading(true);
@@ -489,7 +483,7 @@ function DataProvider({ children }) {
       console.log(err);
     }
   };
-
+  console.log(data);
   const value = {
     handleDelete,
     handleAdd,

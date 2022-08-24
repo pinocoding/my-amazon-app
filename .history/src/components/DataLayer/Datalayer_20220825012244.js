@@ -489,7 +489,7 @@ function DataProvider({ children }) {
       console.log(err);
     }
   };
-
+  console.log(data);
   const value = {
     handleDelete,
     handleAdd,

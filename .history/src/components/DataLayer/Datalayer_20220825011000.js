@@ -23,7 +23,7 @@ const DataContext = createContext();
 
 function DataProvider({ children }) {
   const navigate = useNavigate();
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
 
   const [checked, setChecked] = useState(localStorage.getItem("switch"));
   const [pageLoading, setPageLoading] = useState(false);
@@ -432,37 +432,25 @@ function DataProvider({ children }) {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
-    if (password !== rePassword) {
-      return setErrorMsg("Passwords do not match");
-    }
-    if (
-      email === "" ||
-      password === "" ||
-      data.Address === "" ||
-      data.Country === "" ||
-      data.Phonenumber === ""
-    ) {
-      return setErrorMsg("Please fulfill the form");
-    }
     try {
       setPageLoading(true);
       await updateProfile(auth.currentUser, {
         displayName: fullName,
-      });
-      await updateEmail(auth.currentUser, email);
-      await updatePassword(auth.currentUser, password);
-      await fs
-        .collection("users")
-        .doc(currentUser.uid)
-        .set({
-          Email: email,
-          Password: password,
-          displayName: fullName,
-          phoneNumber: data.Phonenumber,
-          Address: data.Address,
-          Country: data.Country,
-          timeStamp: serverTimestamp(),
-        })
+      })
+        // await updateEmail(auth.currentUser, email);
+        // await updatePassword(auth.currentUser, password);
+        // await fs
+        //   .collection("users")
+        //   .doc(currentUser.uid)
+        //   .set({
+        //     Email: email,
+        //     Password: password,
+        //     displayName: fullName,
+        //     phoneNumber: data.Phonenumber,
+        //     Address: data.Address,
+        //     Country: data.Country,
+        //     timeStamp: serverTimestamp(),
+        //   })
         .then(() => {
           navigate("/");
         });

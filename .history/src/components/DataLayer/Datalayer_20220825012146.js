@@ -442,7 +442,6 @@ function DataProvider({ children }) {
       data.Country === "" ||
       data.Phonenumber === ""
     ) {
-      return setErrorMsg("Please fulfill the form");
     }
     try {
       setPageLoading(true);
@@ -489,7 +488,7 @@ function DataProvider({ children }) {
       console.log(err);
     }
   };
-
+  console.log(data);
   const value = {
     handleDelete,
     handleAdd,

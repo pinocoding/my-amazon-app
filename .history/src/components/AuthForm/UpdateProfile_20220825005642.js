@@ -89,12 +89,12 @@ function UpdateProfile() {
               );
             })}
 
-            <div className="login__errorMsg">{context.errorMsg}</div>
-            <div className="login__button">
+            <div className="login__errorMsg">{context.errorMsg}</d>
+            <p className="login__button">
               <button onClick={handleUpdate}>
                 {pageLoading ? <CircleLoading /> : t("UpdateProfile")}
               </button>
-            </div>
+            </p>
           </form>
         </div>
 

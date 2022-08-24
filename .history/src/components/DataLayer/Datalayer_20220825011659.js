@@ -432,18 +432,6 @@ function DataProvider({ children }) {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
-    if (password !== rePassword) {
-      return setErrorMsg("Passwords do not match");
-    }
-    if (
-      email === "" ||
-      password === "" ||
-      data.Address === "" ||
-      data.Country === "" ||
-      data.Phonenumber === ""
-    ) {
-      return setErrorMsg("Please fulfill the form");
-    }
     try {
       setPageLoading(true);
       await updateProfile(auth.currentUser, {
@@ -489,7 +477,7 @@ function DataProvider({ children }) {
       console.log(err);
     }
   };
-
+  console.log(data);
   const value = {
     handleDelete,
     handleAdd,
