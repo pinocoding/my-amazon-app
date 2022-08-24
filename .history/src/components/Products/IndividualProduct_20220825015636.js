@@ -3,13 +3,11 @@ import { DataContext } from "../DataLayer/Datalayer";
 import { useStateValue } from "../DataLayer/Datalayer";
 import { useNavigate } from "react-router-dom";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { scrollToTop } from "../Backtotop/Backtotop";
 
 function IndividualProduct({ item, myKey }) {
   const navigate = useNavigate();
-  const individualPage = async () => {
+  const individualPage = asynce() => {
     navigate("/Individualpage");
-    scrollToTop();
   };
   const [{ itembox }, dispatch] = useStateValue();
 

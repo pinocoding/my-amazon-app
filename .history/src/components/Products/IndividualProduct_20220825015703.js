@@ -8,8 +8,8 @@ import { scrollToTop } from "../Backtotop/Backtotop";
 function IndividualProduct({ item, myKey }) {
   const navigate = useNavigate();
   const individualPage = async () => {
-    navigate("/Individualpage");
-    scrollToTop();
+    await navigate("/Individualpage");
+    await scrollToTop();
   };
   const [{ itembox }, dispatch] = useStateValue();
 
