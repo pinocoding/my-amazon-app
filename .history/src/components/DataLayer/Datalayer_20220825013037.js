@@ -447,7 +447,6 @@ function DataProvider({ children }) {
     }
     if (
       email === "" ||
-      fullName === "" ||
       password === "" ||
       data.Address === "" ||
       data.Country === "" ||
