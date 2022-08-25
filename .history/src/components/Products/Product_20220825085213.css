@@ -480,18 +480,17 @@ color:#D6D6D7;
   background-color: transparent;
 }
 .individualleft__ribbon  > p {
-  background-color: #db7093;
-  color: #fff;
-  display: block;
-  font-size: 15px;
-  left: -66px;
   position: absolute;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  top: 19px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  text-align: center;
   width: 200px;
+  display: block;
+  transform: rotate(-45deg);
+  top: 24px;
+  left: -63px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 }
