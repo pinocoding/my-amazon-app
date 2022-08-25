@@ -19,7 +19,6 @@
   grid-template-columns: auto auto auto auto ;
   padding: 20px;
   gap: 25px;
-  min-height:890px;
 }
 
 
@@ -389,7 +388,6 @@ color:#D6D6D7;
     grid-template-columns: auto auto ;
     padding: 10px;
     gap: 10px;
-    min-height:500px;
   }
 
 
