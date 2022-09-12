@@ -37,15 +37,12 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };
@@ -224,6 +221,7 @@ function IndividualPage() {
                         </div>
                         <div>
                           <p>{item.details.brand}</p>
+if ()
                           <p>{item.details.color}</p>
                           <p> {item.details.connectivity}</p>
                           <p> {item.details.model}</p>

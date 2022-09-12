@@ -9,6 +9,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -16,6 +17,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import FaceIcon from "@mui/icons-material/Face";
 import SearchBar from "../SearchBar/SearchBar";
+
 import "./Header.css";
 import Languages from "../Languages/Languages";
 
@@ -229,6 +231,7 @@ function Header() {
           </div>
         </div>
         <Link to="/checkout">
+          <div></div>
           {currentUser && userCartProduct.length > 0 ? (
             <div
               style={{ color: "orange", fontWeight: "600" }}

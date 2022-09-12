@@ -9,6 +9,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -16,6 +17,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import FaceIcon from "@mui/icons-material/Face";
 import SearchBar from "../SearchBar/SearchBar";
+
 import "./Header.css";
 import Languages from "../Languages/Languages";
 
@@ -188,6 +190,12 @@ function Header() {
                 </div>
                 <div className="Header__dropdownbottom">
                   <div className="Header__dropdownLeft">
+                    <div className="blem">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis similique eum hic harum tempora consequuntur
+                      libero et. Sit reprehenderit magnam corrupti. Architecto
+                      quae quidem voluptas nisi facilis. Nihil, earum placeat.
+                    </div>
                     <div className="Header__dropdowncontentLeft">
                       <p> {t("Your List")}</p>
                       <ul>

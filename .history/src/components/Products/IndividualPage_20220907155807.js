@@ -37,15 +37,12 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };
@@ -85,6 +82,7 @@ function IndividualPage() {
 
                   <div className="individualleft__InnerImageZoom">
                     <InnerImageZoom
+                    
                       src={item.image}
                       zoomSrc={item.image}
                       zoomScale={1.3}

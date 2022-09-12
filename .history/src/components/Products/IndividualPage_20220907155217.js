@@ -37,15 +37,12 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };
@@ -65,6 +62,7 @@ function IndividualPage() {
   if (itembox[0].petdetail === undefined) {
     delete itembox[0].petdetail;
   }
+if ()
   return (
     <div className="individual__wrap">
       {itembox.map((item, index) => {

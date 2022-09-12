@@ -37,15 +37,12 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };
@@ -65,6 +62,7 @@ function IndividualPage() {
   if (itembox[0].petdetail === undefined) {
     delete itembox[0].petdetail;
   }
+
   return (
     <div className="individual__wrap">
       {itembox.map((item, index) => {
@@ -80,6 +78,7 @@ function IndividualPage() {
                   {item.onsales === "best price" && (
                     <div className="individualleft__ribbon">
                       <p>{item.onsales}</p>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore nulla aspernatur ratione quia vero ipsam cum rem porro? Eveniet ea ullam architecto officiis consectetur quis totam, sed ipsa nesciunt eligendi.</p>
                     </div>
                   )}
 

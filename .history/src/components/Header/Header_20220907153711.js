@@ -88,7 +88,8 @@ function Header() {
           className={
             isActive || textActive ? "header-overlay" : "header-noneoverlay"
           }
-        ></div>
+        >
+        </div>
 
         <Link to="/">
           <img

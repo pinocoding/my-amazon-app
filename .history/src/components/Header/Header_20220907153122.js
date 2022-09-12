@@ -9,6 +9,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -16,6 +17,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import FaceIcon from "@mui/icons-material/Face";
 import SearchBar from "../SearchBar/SearchBar";
+
 import "./Header.css";
 import Languages from "../Languages/Languages";
 
@@ -141,6 +143,12 @@ function Header() {
                 </div>
 
                 <div className="header__optionLineTwo">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident laboriosam eum numquam eligendi maxime error ea
+                    commodi nulla sapiente explicabo? Omnis repellat temporibus
+                    atque sed ipsam, exercitationem corrupti dignissimos itaque.
+                  </p>
                   <p> {t("Account & Lists")}</p>
                   <div>
                     <ArrowDropDownIcon className="header__optionLineTwoDropDownIcon" />

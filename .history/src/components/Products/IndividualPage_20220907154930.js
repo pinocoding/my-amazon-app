@@ -37,15 +37,12 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };
@@ -65,6 +62,7 @@ function IndividualPage() {
   if (itembox[0].petdetail === undefined) {
     delete itembox[0].petdetail;
   }
+
   return (
     <div className="individual__wrap">
       {itembox.map((item, index) => {
@@ -94,6 +92,7 @@ function IndividualPage() {
                   </div>
                   <div className="individualleft__ProductCarousel">
                     <ProductCarousel img={item.image} />
+                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae expedita molestiae sequi quis delectus dolorum exercitationem quia consequuntur vero cum, necessitatibus ex, facilis quisquam ad mollitia sit a impedit dignissimos.</div>
                   </div>
                 </div>
 

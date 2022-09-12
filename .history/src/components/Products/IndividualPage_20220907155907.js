@@ -45,7 +45,6 @@ function IndividualPage() {
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };

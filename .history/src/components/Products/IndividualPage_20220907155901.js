@@ -37,15 +37,13 @@ function IndividualPage() {
   const handleAddToCart = (item) => {
     addToCart(item);
   };
-
+  
   const handleBuyNow = (item) => {
     buyNow(item);
   };
-
   const handleHoverLeave = () => {
     setImg();
   };
-
   const handleHover = (item) => {
     setImg(item.image);
   };

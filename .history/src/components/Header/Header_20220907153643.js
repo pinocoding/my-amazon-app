@@ -16,6 +16,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import FaceIcon from "@mui/icons-material/Face";
 import SearchBar from "../SearchBar/SearchBar";
+
 import "./Header.css";
 import Languages from "../Languages/Languages";
 

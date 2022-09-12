@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-
 function Languages() {
   const { i18n, t } = useTranslation(["common"]);
   useEffect(() => {
